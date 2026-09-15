@@ -147,30 +147,50 @@ public class EnemyBase : MonoBehaviour, IDamageable, IElementEntity
     //  敌人行动（由EnemyAI调用）
     // ==========================================
 
-    /// <summary>对玩家执行一个行动</summary>
+    /// <summary>对玩家执行一个行动（攻击→防御→治疗顺序）</summary>
     public void ExecuteAction(EnemyAction action)
     {
         var bm = GameManager.Instance != null ? GameManager.Instance.BattleManager : FindObjectOfType<BattleManager>();
         var player = bm?.Player;
+        var vfx = CombatVFXManager.Instance;
 
-        switch (action.actionType)
+        // —— 1. 攻击（先执行）——
+        if (action.actionType == ActionType.Attack || action.actionType == ActionType.AttackAndDefend)
         {
-            case ActionType.Attack:
-                if (player != null && player.IsAlive)
-                    player.TakeDamage(action.damage, Data.element);
-                break;
+            if (player != null && player.IsAlive)
+            {
+                player.TakeDamage(action.damage, Data.element);
+                if (vfx != null)
+                    vfx.PlayClawMarks(vfx.GetPlayerPosition());
+            }
+        }
 
-            case ActionType.Defend:
+        // —— 2. 防御（次执行）——
+        if (action.actionType == ActionType.Defend || action.actionType == ActionType.AttackAndDefend)
+        {
+            if (action.shield > 0)
+            {
                 AddShield(action.shield);
-                if (action.heal > 0)
-                    Heal(action.heal);
-                break;
+                if (vfx != null)
+                    vfx.PlayShield(vfx.GetEnemyPosition());
+            }
+        }
 
-            case ActionType.Charge:
-                // 蓄力：本回合不行动，下回合释放大伤害
-                // 实际伤害在 EnemyAI 中处理（记录蓄力状态，下回合自动释放）
-                Debug.Log($"[{Data.enemyName}] 蓄力中…");
-                break;
+        // —— 3. 治疗（最后执行）——
+        if (action.heal > 0 &&
+            (action.actionType == ActionType.Defend ||
+             action.actionType == ActionType.AttackAndDefend ||
+             action.actionType == ActionType.Cure))
+        {
+            Heal(action.heal);
+            if (vfx != null)
+                vfx.PlayHeal(vfx.GetEnemyPosition());
+        }
+
+        // —— 蓄力 ——
+        if (action.actionType == ActionType.Charge)
+        {
+            Debug.Log($"[{Data.enemyName}] 蓄力中…");
         }
     }
 

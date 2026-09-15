@@ -17,6 +17,9 @@ public class BattleUI : MonoBehaviour
     public EnemyData enemyData;
     public Transform enemyArea;
 
+    [Header("Player Area (VFX)")]
+    public RectTransform playerArea;
+
     [Header("Player HPBarUI")]
     public HPBarUI playerHPBar;
 
@@ -86,6 +89,24 @@ public class BattleUI : MonoBehaviour
         _comboSystem = ComboEffectSystem.Instance;
         if (flashOverlay != null)
             _comboSystem.Initialize(flashOverlay, particleLayer, comboTextLayer);
+
+        // 初始化战斗特效管理器
+        var vfxGo = new GameObject("CombatVFXManager");
+        var vfx = vfxGo.AddComponent<CombatVFXManager>();
+        var playerAreaRT = playerArea;
+        if (playerAreaRT == null)
+        {
+            // 查找场景中的 PlayerCharacter 对象（玩家身体所在位置）
+            var playerChar = GameObject.Find("PlayerCharacter");
+            if (playerChar != null)
+                playerAreaRT = playerChar.GetComponent<RectTransform>();
+        }
+        if (playerAreaRT == null && playerHPBar != null)
+            playerAreaRT = playerHPBar.GetComponent<RectTransform>();
+        vfx.Initialize(particleLayer,
+            enemyArea != null ? enemyArea.GetComponent<RectTransform>() : null,
+            playerAreaRT,
+            _cardFont);
 
         // 获取 BattleManager（场景中的）
         _bm = FindObjectOfType<BattleManager>();
@@ -171,9 +192,9 @@ public class BattleUI : MonoBehaviour
         // 更新 UI
         SetTurn(0);
         UpdateDeckInfo();
-        UpdateEnemyDisplay();
 
-        // 开始战斗
+        // 开始战斗（StartBattle 会触发 OnPlayerTurnStart，
+        // HandlePlayerTurnStart 中会预决策敌人行动并更新意图显示）
         _bm.StartBattle();
 
         // HandlePlayerTurnStart 已经抽满 INITIAL_HAND 张，不需要额外补抽
@@ -442,6 +463,14 @@ public class BattleUI : MonoBehaviour
         if (data.damage > 0)
             TriggerAttackVFX(data.element, data.damage);
 
+        // 触发防御 VFX（玩家身上出现蓝色护盾）
+        if (data.shield > 0 && CombatVFXManager.Instance != null)
+            CombatVFXManager.Instance.PlayShield(CombatVFXManager.Instance.GetPlayerPosition());
+
+        // 触发治疗 VFX（玩家身上出现绿色十字架）
+        if (data.heal > 0 && CombatVFXManager.Instance != null)
+            CombatVFXManager.Instance.PlayHeal(CombatVFXManager.Instance.GetPlayerPosition());
+
         // 显示反应文本
         var reactionText = DamageSystem.LastReactionText;
         if (!string.IsNullOrEmpty(reactionText))
@@ -460,6 +489,14 @@ public class BattleUI : MonoBehaviour
     {
         SetTurn(_bm.TurnManager.TurnNumber);
         RestoreEnergy();
+
+        // 预决策敌人下一步行动，确保意图显示与实际执行一致
+        if (_enemy != null)
+        {
+            var ai = _enemy.GetComponent<EnemyAI>();
+            if (ai != null) ai.PredecideNextAction();
+        }
+
         UpdateEnemyDisplay();
         RefreshHandCosts();
     }
@@ -539,11 +576,15 @@ public class BattleUI : MonoBehaviour
                 bool frozen = _bm.BuffSystem.HasBuff(_enemy, BuffType.Freeze);
                 if (frozen)
                     enemyIntentText.text = "[冰冻] 跳过回合";
-                else if (enemyData.actions.Count > 0)
+                else
                 {
-                    // 显示敌人下一步意图
-                    int idx = Mathf.Max(0, (_bm.TurnManager.TurnNumber - 1)) % enemyData.actions.Count;
-                    enemyIntentText.text = enemyData.actions[idx].GetIntentText();
+                    // 从 EnemyAI 读取预决策的下一步行动
+                    var ai = _enemy != null ? _enemy.GetComponent<EnemyAI>() : null;
+                    var nextAction = ai != null ? ai.NextAction : null;
+                    if (nextAction != null)
+                        enemyIntentText.text = nextAction.GetIntentText();
+                    else if (enemyData.actions.Count > 0)
+                        enemyIntentText.text = enemyData.actions[0].GetIntentText();
                 }
             }
         }

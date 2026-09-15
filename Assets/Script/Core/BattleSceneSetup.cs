@@ -145,6 +145,9 @@ public class BattleSceneSetup : MonoBehaviour
         Sprite portrait = ExtractSprite(instance);
         SetPortraitImage(enemyAreaPanel, portrait, "EnemyPortrait");
 
+        // 2b. 将 EnemyIntentText 移到立绘下方，避免被放大的立绘遮挡
+        PositionIntentTextBelowPortrait(enemyAreaPanel, portrait);
+
         // 3. 隐藏占位火柴人
         HideChildren(enemyAreaPanel, EnemyPlaceholderNames);
 
@@ -220,6 +223,50 @@ public class BattleSceneSetup : MonoBehaviour
         portraitImage.sprite = sprite;
         portraitImage.preserveAspect = true;
         portraitImage.enabled = true;
+
+        // Auto-scale so visible content fills the rect height.
+        // The Image component uses sprite.rect for preserveAspect, but the actual
+        // visible content only fills sprite.textureRect within that rect. We need
+        // to compensate for both the aspect-ratio mismatch and the content padding.
+        float rectW = 300f, rectH = 400f;
+        float spW = sprite.rect.width, spH = sprite.rect.height;
+        float texW = sprite.textureRect.width, texH = sprite.textureRect.height;
+        float spriteAspect = spW / spH;
+        float rectAspect = rectW / rectH;
+
+        float scale;
+        if (spriteAspect > rectAspect)
+        {
+            // Width-constrained: content height = rectW * texH / spW
+            scale = (rectH * spW) / (rectW * texH);
+        }
+        else
+        {
+            // Height-constrained: content height = rectH * texH / spH
+            scale = spH / texH;
+        }
+        portraitImage.transform.localScale = new Vector3(scale, scale, 1f);
+    }
+
+    /// <summary>将 EnemyIntentText 移到立绘可见内容下方，避免被放大后的立绘遮挡</summary>
+    void PositionIntentTextBelowPortrait(Transform panel, Sprite sprite)
+    {
+        if (panel == null || sprite == null) return;
+
+        var intentText = panel.Find("EnemyIntentText");
+        if (intentText == null) return;
+
+        var portrait = panel.Find("EnemyPortrait");
+        if (portrait == null) return;
+
+        float scale = portrait.localScale.x;
+        float spAspect = sprite.rect.width / sprite.rect.height;
+        float rAspect = 300f / 400f;
+        float drawnH = spAspect > rAspect ? 300f / spAspect : 400f;
+        float actualH = drawnH * scale;
+        float bottomY = -actualH / 2f;
+
+        intentText.localPosition = new Vector3(0, bottomY - 30f, 0);
     }
 
     void HideChildren(Transform parent, string[] names)

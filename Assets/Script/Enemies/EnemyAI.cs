@@ -13,6 +13,10 @@ public class EnemyAI : MonoBehaviour
     private bool _isCharged;
     private EnemyAction _chargedAction;  // 蓄力完成后释放的行动
 
+    // 预决策：在玩家回合开始时就决定下一步行动，供UI显示意图
+    private EnemyAction _nextAction;
+    public EnemyAction NextAction => _isCharged ? _chargedAction : _nextAction;
+
     void Start()
     {
         _enemy = GetComponent<EnemyBase>();
@@ -63,14 +67,26 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        // 正常决策
-        EnemyAction chosen = DecideAction();
+        // 执行预决策的行动（如果没有则现场决策）
+        EnemyAction chosen = _nextAction ?? DecideAction();
         if (chosen != null)
         {
             _enemy.ExecuteAction(chosen);
         }
+        _nextAction = null;
 
         bm.EndEnemyPhase();
+    }
+
+    /// <summary>预决策下一回合行动，供UI显示意图。由BattleUI在玩家回合开始时调用。</summary>
+    public void PredecideNextAction()
+    {
+        if (_isCharged && _chargedAction != null)
+        {
+            _nextAction = null;
+            return;
+        }
+        _nextAction = DecideAction();
     }
 
     /// <summary>
