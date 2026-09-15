@@ -1,18 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
-<<<<<<< HEAD
-=======
 using UnityEngine.Video;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 using TMPro;
 
 /// <summary>
 /// Game Over screen: victory or defeat display with stats and restart options.
-<<<<<<< HEAD
-/// Directly uses GameManager for scene transitions.
-=======
 /// On victory, plays a victory video before showing the panel.
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 /// </summary>
 public class GameOverUI : MonoBehaviour
 {
@@ -34,8 +27,6 @@ public class GameOverUI : MonoBehaviour
     public Color victoryColor = new Color(0.85f, 0.7f, 0.3f);
     public Color defeatColor = new Color(0.7f, 0.15f, 0.15f);
 
-<<<<<<< HEAD
-=======
     [Header("Victory Video")]
     public GameObject panelGameOver;
 
@@ -51,7 +42,6 @@ public class GameOverUI : MonoBehaviour
             panelGameOver = gameObject;
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     void Start()
     {
         var gm = GameManager.Instance;
@@ -70,10 +60,6 @@ public class GameOverUI : MonoBehaviour
                     gm.ReturnToMainMenu();
             });
 
-<<<<<<< HEAD
-        // 自动显示结果
-=======
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         ShowDefaultResult();
     }
 
@@ -82,9 +68,6 @@ public class GameOverUI : MonoBehaviour
     /// </summary>
     public void ShowResult(bool victory, int floor, int kills, int gold)
     {
-<<<<<<< HEAD
-        gameObject.SetActive(true);
-=======
         if (victory)
         {
             PlayVictoryVideo(floor, kills, gold);
@@ -230,7 +213,6 @@ public class GameOverUI : MonoBehaviour
     void ShowPanelDirectly(bool victory, int floor, int kills, int gold)
     {
         if (panelGameOver != null) panelGameOver.SetActive(true);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         if (titleText != null)
         {
@@ -260,12 +242,6 @@ public class GameOverUI : MonoBehaviour
     private void ShowDefaultResult()
     {
         var gm = GameManager.Instance;
-<<<<<<< HEAD
-        int floor = gm != null ? gm.CurrentFloor : 1;
-        bool victory = gm != null && gm.LastGameResultIsVictory;
-
-        ShowResult(victory, floor, 0, 0);
-=======
 
         if (gm != null)
         {
@@ -275,6 +251,5 @@ public class GameOverUI : MonoBehaviour
         {
             ShowResult(false, 1, 0, 0);
         }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 }

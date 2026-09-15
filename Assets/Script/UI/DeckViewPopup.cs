@@ -12,16 +12,10 @@ public class DeckViewPopup : MonoBehaviour
     private GameObject _panel;
     private ScrollRect _scrollRect;
     private TMP_Text _titleLabel;
-<<<<<<< HEAD
-    private bool _showingDeck = true;
-    private List<CardData> _deckRef;
-    private List<CardData> _discardRef;
-=======
     private int _viewMode = 0; // 0=deck, 1=discard, 2=all
     private List<CardData> _deckRef;
     private List<CardData> _discardRef;
     private List<CardData> _allCardsRef;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     private TMP_FontAsset _font;
 
     public void Initialize(List<CardData> deck, List<CardData> discard, TMP_FontAsset font)
@@ -33,8 +27,6 @@ public class DeckViewPopup : MonoBehaviour
         ShowDeck();
     }
 
-<<<<<<< HEAD
-=======
     public void Initialize(List<CardData> deck, List<CardData> discard, List<CardData> allCards, TMP_FontAsset font)
     {
         _deckRef = deck;
@@ -45,7 +37,6 @@ public class DeckViewPopup : MonoBehaviour
         ShowDeck();
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     void BuildUI()
     {
         // Overlay (semi-transparent background)
@@ -85,11 +76,7 @@ public class DeckViewPopup : MonoBehaviour
         _titleLabel.alignment = TextAlignmentOptions.Center;
         _titleLabel.raycastTarget = false;
 
-<<<<<<< HEAD
-        // Tab buttons container
-=======
         // Tab buttons container (3 tabs)
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         var tabGo = new GameObject("Tabs");
         tabGo.transform.SetParent(_panel.transform, false);
         var tabRt = tabGo.AddComponent<RectTransform>();
@@ -97,39 +84,6 @@ public class DeckViewPopup : MonoBehaviour
         tabRt.anchorMax = new Vector2(0.5f, 1f);
         tabRt.pivot = new Vector2(0.5f, 1f);
         tabRt.anchoredPosition = new Vector2(0, -80f);
-<<<<<<< HEAD
-        tabRt.sizeDelta = new Vector2(500f, 50f);
-
-        // Deck tab button
-        var deckTabGo = new GameObject("DeckTab");
-        deckTabGo.transform.SetParent(tabGo.transform, false);
-        var deckTabRt = deckTabGo.AddComponent<RectTransform>();
-        deckTabRt.anchorMin = new Vector2(0f, 0f);
-        deckTabRt.anchorMax = new Vector2(0.5f, 1f);
-        deckTabRt.offsetMin = new Vector2(10f, 0f);
-        deckTabRt.offsetMax = new Vector2(-5f, 0f);
-        var deckTabImg = deckTabGo.AddComponent<Image>();
-        deckTabImg.color = new Color(0.2f, 0.35f, 0.55f, 1f);
-        var deckTabBtn = deckTabGo.AddComponent<Button>();
-        var deckTabText = CreateLabel(deckTabGo, "牌库");
-        deckTabText.fontSize = 24;
-        deckTabBtn.onClick.AddListener(() => { _showingDeck = true; RefreshContent(); });
-
-        // Discard tab button
-        var discardTabGo = new GameObject("DiscardTab");
-        discardTabGo.transform.SetParent(tabGo.transform, false);
-        var discardTabRt = discardTabGo.AddComponent<RectTransform>();
-        discardTabRt.anchorMin = new Vector2(0.5f, 0f);
-        discardTabRt.anchorMax = new Vector2(1f, 1f);
-        discardTabRt.offsetMin = new Vector2(5f, 0f);
-        discardTabRt.offsetMax = new Vector2(-10f, 0f);
-        var discardTabImg = discardTabGo.AddComponent<Image>();
-        discardTabImg.color = new Color(0.3f, 0.2f, 0.15f, 1f);
-        var discardTabBtn = discardTabGo.AddComponent<Button>();
-        var discardTabText = CreateLabel(discardTabGo, "弃牌");
-        discardTabText.fontSize = 24;
-        discardTabBtn.onClick.AddListener(() => { _showingDeck = false; RefreshContent(); });
-=======
         tabRt.sizeDelta = new Vector2(560f, 50f);
 
         var tabHlg = tabGo.AddComponent<HorizontalLayoutGroup>();
@@ -149,7 +103,6 @@ public class DeckViewPopup : MonoBehaviour
         // All cards tab (my deck)
         var allTabGo = CreateTabButton(tabGo.transform, "我的牌组", new Color(0.15f, 0.35f, 0.2f, 1f));
         allTabGo.GetComponent<Button>().onClick.AddListener(() => { _viewMode = 2; RefreshContent(); });
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         // Scroll view
         var scrollGo = new GameObject("ScrollView");
@@ -161,15 +114,6 @@ public class DeckViewPopup : MonoBehaviour
         scrollRt.offsetMax = new Vector2(-20f, -140f);
         var scrollImg = scrollGo.AddComponent<Image>();
         scrollImg.color = new Color(0.02f, 0.02f, 0.05f, 0.5f);
-<<<<<<< HEAD
-        _scrollRect = scrollGo.AddComponent<ScrollRect>();
-        _scrollRect.horizontal = false;
-        _scrollRect.vertical = true;
-
-        // Content
-        var contentGo = new GameObject("Content");
-        contentGo.transform.SetParent(scrollGo.transform, false);
-=======
         scrollImg.raycastTarget = true;
         _scrollRect = scrollGo.AddComponent<ScrollRect>();
         _scrollRect.horizontal = false;
@@ -194,24 +138,16 @@ public class DeckViewPopup : MonoBehaviour
         // Content
         var contentGo = new GameObject("Content");
         contentGo.transform.SetParent(viewportGo.transform, false);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         var contentRt = contentGo.AddComponent<RectTransform>();
         contentRt.anchorMin = new Vector2(0f, 1f);
         contentRt.anchorMax = new Vector2(1f, 1f);
         contentRt.pivot = new Vector2(0.5f, 1f);
-<<<<<<< HEAD
-=======
         contentRt.anchoredPosition = Vector2.zero;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         contentRt.sizeDelta = new Vector2(0f, 0f);
         var vlg = contentGo.AddComponent<VerticalLayoutGroup>();
         vlg.spacing = 8f;
         vlg.padding = new RectOffset(10, 10, 10, 10);
         vlg.childAlignment = TextAnchor.UpperCenter;
-<<<<<<< HEAD
-        var fitter = contentGo.AddComponent<ContentSizeFitter>();
-        fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-=======
         vlg.childControlWidth = true;
         vlg.childControlHeight = true;
         vlg.childForceExpandWidth = true;
@@ -219,7 +155,6 @@ public class DeckViewPopup : MonoBehaviour
         var fitter = contentGo.AddComponent<ContentSizeFitter>();
         fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
         fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         _scrollRect.content = contentRt;
 
         // Close button
@@ -240,8 +175,6 @@ public class DeckViewPopup : MonoBehaviour
         closeBtn.onClick.AddListener(Close);
     }
 
-<<<<<<< HEAD
-=======
     GameObject CreateTabButton(Transform parent, string label, Color color)
     {
         var go = new GameObject("Tab_" + label);
@@ -254,7 +187,6 @@ public class DeckViewPopup : MonoBehaviour
         return go;
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     TextMeshProUGUI CreateLabel(GameObject parent, string text)
     {
         var go = new GameObject("Label");
@@ -273,20 +205,12 @@ public class DeckViewPopup : MonoBehaviour
 
     void ShowDeck()
     {
-<<<<<<< HEAD
-        _showingDeck = true;
-=======
         _viewMode = 0;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         RefreshContent();
     }
 
     void RefreshContent()
     {
-<<<<<<< HEAD
-        var list = _showingDeck ? _deckRef : _discardRef;
-        _titleLabel.text = (_showingDeck ? "牌库" : "弃牌堆") + " (" + (list?.Count ?? 0) + ")";
-=======
         // Determine list and title based on view mode
         List<CardData> list;
         string titleName;
@@ -318,7 +242,6 @@ public class DeckViewPopup : MonoBehaviour
         }
 
         _titleLabel.text = titleName + " (" + (list?.Count ?? 0) + ")";
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         // Clear old entries
         for (int i = _scrollRect.content.childCount - 1; i >= 0; i--)
@@ -326,66 +249,6 @@ public class DeckViewPopup : MonoBehaviour
 
         if (list == null || list.Count == 0)
         {
-<<<<<<< HEAD
-            var emptyGo = new GameObject("Empty");
-            emptyGo.transform.SetParent(_scrollRect.content, false);
-            var emptyRt = emptyGo.AddComponent<RectTransform>();
-            emptyRt.sizeDelta = new Vector2(0f, 60f);
-            var emptyText = emptyGo.AddComponent<TextMeshProUGUI>();
-            if (_font != null) emptyText.font = _font;
-            emptyText.text = "空";
-            emptyText.fontSize = 24;
-            emptyText.color = new Color(0.5f, 0.5f, 0.5f, 1f);
-            emptyText.alignment = TextAlignmentOptions.Center;
-            emptyText.raycastTarget = false;
-            return;
-        }
-
-        foreach (var card in list)
-        {
-            if (card == null) continue;
-
-            // Entry row
-            var entryGo = new GameObject("Entry_" + card.cardName);
-            entryGo.transform.SetParent(_scrollRect.content, false);
-            var entryImg = entryGo.AddComponent<Image>();
-            entryImg.color = new Color(0.1f, 0.1f, 0.15f, 0.9f);
-            var entryHlg = entryGo.AddComponent<HorizontalLayoutGroup>();
-            entryHlg.padding = new RectOffset(8, 8, 4, 4);
-            entryHlg.spacing = 8f;
-            entryHlg.childForceExpandWidth = false;
-            entryHlg.childForceExpandHeight = true;
-            entryHlg.childControlWidth = true;
-            entryHlg.childControlHeight = true;
-            var entryFitter = entryGo.AddComponent<ContentSizeFitter>();
-            entryFitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-
-            // Cost
-            var costGo = new GameObject("Cost");
-            costGo.transform.SetParent(entryGo.transform, false);
-            var costTmp = costGo.AddComponent<TextMeshProUGUI>();
-            if (_font != null) costTmp.font = _font;
-            costTmp.text = card.cost.ToString();
-            costTmp.fontSize = 26;
-            costTmp.color = new Color(0.4f, 0.7f, 1f, 1f);
-            costTmp.alignment = TextAlignmentOptions.Center;
-            costTmp.raycastTarget = false;
-            var costFitter = costGo.AddComponent<ContentSizeFitter>();
-            costFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
-
-            // Name + description
-            var nameGo = new GameObject("Name");
-            nameGo.transform.SetParent(entryGo.transform, false);
-            var nameTmp = nameGo.AddComponent<TextMeshProUGUI>();
-            if (_font != null) nameTmp.font = _font;
-            nameTmp.text = card.cardName + "  —  " + card.GetDescription();
-            nameTmp.fontSize = 20;
-            nameTmp.color = new Color(1f, 0.92f, 0.7f, 1f);
-            nameTmp.alignment = TextAlignmentOptions.Left;
-            nameTmp.raycastTarget = false;
-            nameTmp.enableWordWrapping = true;
-            nameTmp.overflowMode = TextOverflowModes.Overflow;
-=======
             CreateEmptyEntry();
             return;
         }
@@ -496,7 +359,6 @@ public class DeckViewPopup : MonoBehaviour
             countTmp.raycastTarget = false;
             var countFitter = countGo.AddComponent<ContentSizeFitter>();
             countFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         }
     }
 

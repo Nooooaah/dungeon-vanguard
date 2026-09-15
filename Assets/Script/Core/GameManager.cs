@@ -2,16 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-<<<<<<< HEAD
-/// <summary>
-/// 游戏全局管理器 —— 单例，贯穿所有场景
-/// 组长负责，写在 Scripts/Core/GameManager.cs
-///
-/// 挂载在启动场景的 GameObject 上，DontDestroyOnLoad
-/// </summary>
-=======
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 public class GameManager : MonoBehaviour
 {
     // ===== 单例 =====
@@ -32,21 +23,14 @@ public class GameManager : MonoBehaviour
 
     // ===== GameOverScene 显示模式 =====
     public bool LastGameResultIsVictory { get; private set; }  // true=通关胜利, false=战斗失败
-<<<<<<< HEAD
-=======
     public int TotalKills { get; set; } = 0;     // 本局击败敌人数
     public int TotalGold { get; set; } = 0;      // 本局获得金币总数
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
     // 战斗场景需要的数据（MapController 设置，BattleScene 读取）
     public EnemyData PendingEnemyData { get; set; }
     public MapNode PendingNode { get; set; }
 
-<<<<<<< HEAD
-    // 卡组数据由CardManager管理，这里只需要知道卡组ID列表用于存档
-=======
     // 卡组数据统一由 GameManager._playerDeck 管理
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
     // ===== 玩家持久牌组 =====
     private List<CardData> _playerDeck = new List<CardData>();
@@ -59,15 +43,12 @@ public class GameManager : MonoBehaviour
             _playerDeck.Add(card);
     }
 
-<<<<<<< HEAD
-=======
     public void RemoveCardFromDeck(CardData card)
     {
         if (card != null)
             _playerDeck.Remove(card);
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     public void SetInitialDeck(List<CardData> deck)
     {
         _playerDeck = new List<CardData>(deck);
@@ -119,11 +100,8 @@ public class GameManager : MonoBehaviour
         ChosenElement = element;
         CurrentFloor = 1;
         ClearDeck();
-<<<<<<< HEAD
-=======
         TotalKills = 0;
         TotalGold = 0;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         PlayerCurrentHp = PlayerMaxHp;
         IsGameRunning = true;
         MapController.ClearSavedMap();

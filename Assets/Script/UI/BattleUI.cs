@@ -161,12 +161,9 @@ public class BattleUI : MonoBehaviour
         if (endTurnButton != null)
             endTurnButton.onClick.AddListener(OnEndTurn);
 
-<<<<<<< HEAD
-=======
         // 创建左上角返回主菜单按钮
         CreateReturnButton();
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         // 构建牌组
         BuildInitialDeck();
         ShuffleDeck();
@@ -179,15 +176,7 @@ public class BattleUI : MonoBehaviour
         // 开始战斗
         _bm.StartBattle();
 
-<<<<<<< HEAD
-        // 抽初始手牌（BattleManager 的 HandlePlayerTurnStart 只抽1张/回合，
-        // 初始手牌需要额外补充到 INITIAL_HAND 张）
-        int initialDraw = GameConstants.PLAYER_INITIAL_HAND - 1; // 已抽1张
-        for (int i = 0; i < initialDraw; i++)
-            DrawCard();
-=======
         // HandlePlayerTurnStart 已经抽满 INITIAL_HAND 张，不需要额外补抽
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         // 创建右下角牌库面板
         CreateDeckPanel();
@@ -195,10 +184,7 @@ public class BattleUI : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
-=======
         // Only layout when there are cards and not dragging
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         if (_handCards.Count > 0)
             LayoutHand();
     }
@@ -498,8 +484,6 @@ public class BattleUI : MonoBehaviour
         SoundManager.Instance.PlayEndTurn();
     }
 
-<<<<<<< HEAD
-=======
     void CreateReturnButton()
     {
         var canvas = GetComponentInParent<Canvas>();
@@ -525,7 +509,6 @@ public class BattleUI : MonoBehaviour
         label.alignment = TextAlignmentOptions.Center;
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     // ── 胜负 ──
 
     void OnBattleWon()
@@ -687,11 +670,6 @@ public class BattleUI : MonoBehaviour
 
     void ShowDeckView()
     {
-<<<<<<< HEAD
-        var canvas = GetComponentInParent<Canvas>();
-        if (canvas == null) return;
-
-=======
         ShowPopup(0);
     }
 
@@ -716,16 +694,12 @@ public class BattleUI : MonoBehaviour
                 allCards.Add(card.Data);
         }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         var popupGo = new GameObject("DeckViewPopup");
         popupGo.transform.SetParent(canvas.transform, false);
         var popupRt = popupGo.AddComponent<RectTransform>();
         popupRt.anchorMin = Vector2.zero; popupRt.anchorMax = Vector2.one;
         popupRt.offsetMin = Vector2.zero; popupRt.offsetMax = Vector2.zero;
         var popup = popupGo.AddComponent<DeckViewPopup>();
-<<<<<<< HEAD
-        popup.Initialize(_deck, _discard, _cardFont);
-=======
         popup.Initialize(_deck, _discard, allCards, _cardFont);
 
         // Set initial tab
@@ -737,7 +711,6 @@ public class BattleUI : MonoBehaviour
             var refreshMethod = type.GetMethod("RefreshContent", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             refreshMethod?.Invoke(popup, null);
         }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     void UpdateDeckInfo()
@@ -757,11 +730,6 @@ public class BattleUI : MonoBehaviour
     public float cardCornerRadius = 16f;
 
     private Sprite _roundedRectSprite;
-<<<<<<< HEAD
-
-    Sprite GetRoundedRectSprite(float width, float height, float radius)
-    {
-=======
     private bool _roundedRectCreated;
 
     Sprite GetRoundedRectSprite(float width, float height, float radius)
@@ -771,7 +739,6 @@ public class BattleUI : MonoBehaviour
             return _roundedRectSprite;
         _roundedRectCreated = true;
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         int w = Mathf.RoundToInt(width);
         int h = Mathf.RoundToInt(height);
         int r = Mathf.RoundToInt(radius);
@@ -795,12 +762,8 @@ public class BattleUI : MonoBehaviour
         }
         tex.SetPixels32(pixels);
         tex.Apply();
-<<<<<<< HEAD
-        return Sprite.Create(tex, new Rect(0, 0, w, h), Vector2.one * 0.5f, 100f);
-=======
         _roundedRectSprite = Sprite.Create(tex, new Rect(0, 0, w, h), Vector2.one * 0.5f, 100f);
         return _roundedRectSprite;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     void LayoutHand()
@@ -860,12 +823,6 @@ public class BattleUI : MonoBehaviour
     {
         if (flashOverlay != null)
             StartCoroutine(FlashScreen(element));
-<<<<<<< HEAD
-        if (particleLayer != null)
-            StartCoroutine(SpawnParticleBurst(element, damage));
-        if (enemyArea != null)
-            StartCoroutine(ShakeTransform(enemyArea, 15f, 0.25f));
-=======
         if (enemyArea != null)
             StartCoroutine(ShakeTransform(enemyArea, 15f, 0.25f));
         
@@ -895,7 +852,6 @@ public class BattleUI : MonoBehaviour
         dmgText.raycastTarget = false;
         StartCoroutine(AnimateDamageNumber(dmgGo, dmgRt));
         yield return null;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     IEnumerator FlashScreen(Element element)
@@ -923,11 +879,7 @@ public class BattleUI : MonoBehaviour
                             : element == Element.Water ? new Color(0.3f, 0.6f, 1f, 1f)
                             : new Color(0.4f, 0.9f, 0.4f, 1f);
 
-<<<<<<< HEAD
-        int particleCount = Mathf.Min(20, 8 + damage);
-=======
         int particleCount = Mathf.Min(12, 6 + damage);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         var particles = new List<GameObject>();
 
         Vector2 centerPos = enemyArea != null

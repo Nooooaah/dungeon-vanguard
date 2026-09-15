@@ -130,14 +130,6 @@ public class EnemyBase : MonoBehaviour, IDamageable, IElementEntity
     {
         OnDeath?.Invoke(this);
 
-<<<<<<< HEAD
-        // 从BattleManager注销
-        var bm = GameManager.Instance != null ? GameManager.Instance.BattleManager : FindObjectOfType<BattleManager>();
-        bm?.UnregisterEnemy(this);
-
-        Debug.Log($"[{Data.enemyName}] 被击败！");
-        Destroy(gameObject);
-=======
         var bm = GameManager.Instance != null ? GameManager.Instance.BattleManager : FindObjectOfType<BattleManager>();
         bm?.UnregisterEnemy(this);
 
@@ -149,7 +141,6 @@ public class EnemyBase : MonoBehaviour, IDamageable, IElementEntity
         // Disable instead of Destroy to avoid GC spike
         gameObject.SetActive(false);
         Destroy(gameObject, 1f);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     // ==========================================

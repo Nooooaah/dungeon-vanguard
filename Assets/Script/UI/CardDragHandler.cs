@@ -112,12 +112,6 @@ public class CardDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         EventSystem.current.RaycastAll(eventData, results);
         foreach (var r in results)
         {
-<<<<<<< HEAD
-            if (r.gameObject.CompareTag("DropZone") || r.gameObject.name.Contains("Enemy"))
-            {
-                validDrop = true;
-                break;
-=======
             bool isDropZone = r.gameObject.CompareTag("DropZone");
             bool isEnemy = r.gameObject.name.Contains("Enemy") || r.gameObject.transform.parent?.name.Contains("Enemy") == true;
             bool isPlayer = r.gameObject.name.Contains("Player") || r.gameObject.transform.parent?.name.Contains("Player") == true;
@@ -142,7 +136,6 @@ public class CardDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                     validDrop = true;
                     break;
                 }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             }
         }
 

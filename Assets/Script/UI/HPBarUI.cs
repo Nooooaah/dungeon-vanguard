@@ -35,8 +35,6 @@ public class HPBarUI : MonoBehaviour
     private int _displayedShield;
     private int _displayedEnergy;
 
-<<<<<<< HEAD
-=======
     void Start()
     {
         // 确保用 localScale.x 控制宽度，不依赖 Filled Image type
@@ -52,7 +50,6 @@ public class HPBarUI : MonoBehaviour
         }
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     void Update()
     {
         if (_boundEntity == null) return;
@@ -68,20 +65,12 @@ public class HPBarUI : MonoBehaviour
             _displayedHP = targetHP;
         }
 
-<<<<<<< HEAD
-        // Update HP fill
-        if (hpFill != null)
-        {
-            float ratio = _boundEntity.MaxHP > 0 ? _displayedHP / _boundEntity.MaxHP : 0f;
-            hpFill.fillAmount = Mathf.Clamp01(ratio);
-=======
         // Update HP fill — 用 localScale.x 控制血条长度
         if (hpFill != null)
         {
             float ratio = _boundEntity.MaxHP > 0 ? _displayedHP / _boundEntity.MaxHP : 0f;
             float clamped = Mathf.Clamp01(ratio);
             hpFill.rectTransform.localScale = new Vector3(clamped, 1f, 1f);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
             // Dynamic color
             if (ratio > 0.5f)
@@ -104,14 +93,10 @@ public class HPBarUI : MonoBehaviour
             shieldContainer.SetActive(_displayedShield > 0);
 
         if (shieldFill != null)
-<<<<<<< HEAD
-            shieldFill.fillAmount = Mathf.Clamp01((float)_displayedShield / Mathf.Max(1, _boundEntity.MaxHP) * 0.5f);
-=======
         {
             float shieldRatio = Mathf.Clamp01((float)_displayedShield / Mathf.Max(1, _boundEntity.MaxHP) * 0.5f);
             shieldFill.rectTransform.localScale = new Vector3(shieldRatio, 1f, 1f);
         }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         if (shieldText != null)
             shieldText.text = _displayedShield > 0 ? _displayedShield.ToString() : "";
@@ -157,12 +142,8 @@ public class HPBarUI : MonoBehaviour
         if (hpFill != null)
         {
             float ratio = _boundEntity.MaxHP > 0 ? (float)_boundEntity.CurrentHP / _boundEntity.MaxHP : 0f;
-<<<<<<< HEAD
-            hpFill.fillAmount = Mathf.Clamp01(ratio);
-=======
             float clamped = Mathf.Clamp01(ratio);
             hpFill.rectTransform.localScale = new Vector3(clamped, 1f, 1f);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             hpFill.color = ratio > 0.5f ? hpGreen : ratio > 0.25f ? hpYellow : hpRed;
         }
         if (hpText != null)

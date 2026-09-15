@@ -43,11 +43,8 @@ public class CardHoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         void Awake()
         {
-<<<<<<< HEAD
-=======
             _originalScale = transform.localScale;
             _targetScale = _originalScale;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             _outline = GetComponent<Outline>();
             if (_outline == null)
                 _outline = gameObject.AddComponent<Outline>();
@@ -66,13 +63,10 @@ public class CardHoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         void Update()
         {
-<<<<<<< HEAD
-=======
             // Smooth scale lerp
             _targetScale = _isHovered ? _originalScale * hoverScale : _originalScale;
             if (_originalScale != Vector3.zero)
                 transform.localScale = Vector3.Lerp(transform.localScale, _targetScale, Time.deltaTime * lerpSpeed);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         }
 
         public void OnPointerEnter(PointerEventData eventData)

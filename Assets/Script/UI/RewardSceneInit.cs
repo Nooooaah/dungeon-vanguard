@@ -42,12 +42,9 @@ public class RewardSceneInit : MonoBehaviour
 
         int gold = Random.Range(15, 30);
 
-<<<<<<< HEAD
-=======
         if (GameManager.Instance != null)
             GameManager.Instance.TotalGold += gold;
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         // Subscribe to card selection
         _rewardUI.OnCardSelectedEvent += OnCardSelected;
 

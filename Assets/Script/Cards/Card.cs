@@ -31,11 +31,7 @@ public class Card : MonoBehaviour, ICardEffect
     public GameObject healIconGroup;        // HealthIcon 整组（无治疗/护盾时隐藏）
 
     // ===== 回调 =====
-<<<<<<< HEAD
-    public System.Action<Card> OnPlayed;    // 被打出时回调（CardManager监听）
-=======
     public System.Action<Card> OnPlayed;    // 被打出时回调（BattleUI监听）
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
     /// <summary>用CardData初始化卡牌显示</summary>
     public void Init(CardData data)
@@ -123,11 +119,7 @@ public class Card : MonoBehaviour, ICardEffect
             bm.BuffSystem.ApplyBuff(target, Data.buffType, Data.buffValue, Data.buffDuration);
         }
 
-<<<<<<< HEAD
-        // 通知CardManager：这张牌已打出
-=======
         // 通知监听者：这张牌已打出
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         OnPlayed?.Invoke(this);
     }
 

@@ -2959,12 +2959,7 @@ MonoBehaviour:
   mainMenuButton: {fileID: 363618673}
   victoryColor: {r: 0.85, g: 0.7, b: 0.3, a: 1}
   defeatColor: {r: 0.7, g: 0.15, b: 0.15, a: 1}
-<<<<<<< HEAD
-  victoryBg: {r: 0.15, g: 0.12, b: 0.05, a: 0.95}
-  defeatBg: {r: 0.12, g: 0.05, b: 0.05, a: 0.95}
-=======
   panelGameOver: {fileID: 0}
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 --- !u!1 &766519693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,11 +3048,7 @@ GameObject:
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: PlayerCharacter
-<<<<<<< HEAD
-  m_TagString: Untagged
-=======
   m_TagString: DropZone
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3627,11 +3618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-<<<<<<< HEAD
-  m_AnchoredPosition: {x: 20, y: -15}
-=======
   m_AnchoredPosition: {x: 1342, y: -24}
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
   m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &910362404

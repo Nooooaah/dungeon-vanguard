@@ -23,11 +23,7 @@ public class MainMenuUI : MonoBehaviour
 
     void OnNewGame()
     {
-<<<<<<< HEAD
-        UnityEngine.SceneManagement.SceneManager.LoadScene(GameConstants.SCENE_ELEMENT_SELECTION);
-=======
         UnityEngine.SceneManagement.SceneManager.LoadScene("ElementSelection");
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     void OnContinue()

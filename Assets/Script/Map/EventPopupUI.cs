@@ -89,10 +89,6 @@ public class EventPopupUI : MonoBehaviour
         choicesRt.anchoredPosition = new Vector2(0, 20);
         choicesContainer = choicesGo.transform;
 
-<<<<<<< HEAD
-        gameObject.SetActive(false);
-=======
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     TextMeshProUGUI CreateTMP(string name, Transform parent, float y, float height, int fontSize, Color color)

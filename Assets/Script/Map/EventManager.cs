@@ -46,12 +46,9 @@ public static class EventManager
 {
     private static List<EventData> _eventTemplates;
 
-<<<<<<< HEAD
-=======
     /// <summary>当 ExecuteChoice 包含 RemoveCard 时设为 true，MapController 据此延迟 CompleteNode</summary>
     public static bool PendingCardRemoval { get; set; }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     /// <summary>随机获取一个事件</summary>
     public static EventData GetRandomEvent()
     {
@@ -67,11 +64,8 @@ public static class EventManager
         var gm = GameManager.Instance;
         if (gm == null) return;
 
-<<<<<<< HEAD
-=======
         PendingCardRemoval = false;
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         foreach (var effect in choice.effects)
         {
             switch (effect.type)
@@ -87,15 +81,6 @@ public static class EventManager
                     break;
 
                 case EventEffectType.GainCard:
-<<<<<<< HEAD
-                    // TODO: 接入 CardManager.AddCardToDeck(CardData)
-                    Debug.Log("[事件] 获得一张卡牌");
-                    break;
-
-                case EventEffectType.RemoveCard:
-                    // TODO: 接入选牌界面移除一张
-                    Debug.Log("[事件] 移除一张卡牌");
-=======
                     var allCards = Resources.LoadAll<CardData>("");
                     if (allCards.Length > 0)
                     {
@@ -115,7 +100,6 @@ public static class EventManager
                 case EventEffectType.RemoveCard:
                     PendingCardRemoval = true;
                     Debug.Log("[事件] 等待玩家选择要移除的卡牌");
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
                     break;
 
                 case EventEffectType.GainShield:
@@ -190,17 +174,10 @@ public static class EventManager
                     },
                     new EventChoice
                     {
-<<<<<<< HEAD
-                        text = "强行撬开强化卡牌（-10HP）",
-                        effects = new EventEffect[]
-                        {
-                            new() { type = EventEffectType.GainCard, value = 1 },
-=======
                         text = "强行撬开，获得两张随机牌（-10HP）",
                         effects = new EventEffect[]
                         {
                             new() { type = EventEffectType.GainCard, value = 2 },
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
                             new() { type = EventEffectType.Damage, value = 10 }
                         }
                     }
@@ -225,8 +202,6 @@ public static class EventManager
                         effects = new EventEffect[] { new() { type = EventEffectType.RemoveCard, value = 1 } }
                     }
                 }
-<<<<<<< HEAD
-=======
             },
 
             // 事件4：邪恶法师拦路
@@ -272,7 +247,6 @@ public static class EventManager
                         effects = new EventEffect[] { new() { type = EventEffectType.GainCard, value = 1 } }
                     }
                 }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             }
         };
     }

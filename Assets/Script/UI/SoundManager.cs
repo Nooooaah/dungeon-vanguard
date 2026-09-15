@@ -32,15 +32,9 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
         _audioSource = gameObject.AddComponent<AudioSource>();
-<<<<<<< HEAD
-        _audioSource.volume = 0.6f;
-        _sfxSource = gameObject.AddComponent<AudioSource>();
-        _sfxSource.volume = 0.8f;
-=======
         _audioSource.volume = 0.3f;
         _sfxSource = gameObject.AddComponent<AudioSource>();
         _sfxSource.volume = 1.0f;
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         // Load external SFX if available
         LoadExternalSFX();
@@ -122,9 +116,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlayCardHover()
     {
-<<<<<<< HEAD
-        PlayTone(800f, 0.05f, 0.15f, 0);
-=======
         bool isBattle = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.Contains("Battle");
         if (isBattle)
         {
@@ -142,7 +133,6 @@ public class SoundManager : MonoBehaviour
     {
         PlayTone(800f, 0.05f, 0.6f, 0);
         StartCoroutine(DelayedTone(0.03f, 1200f, 0.04f, 0.4f, 0));
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 
     public void PlayCardDraw()

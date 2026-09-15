@@ -13,14 +13,7 @@ public enum TurnState
     Lose            // 失败
 }
 
-<<<<<<< HEAD
-/// <summary>
-/// 回合管理器 —— 控制回合流转
-/// 组长负责，写在 Scripts/Core/TurnManager.cs
-/// </summary>
-=======
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 public class TurnManager
 {
     public TurnState CurrentState { get; private set; } = TurnState.BattleStart;

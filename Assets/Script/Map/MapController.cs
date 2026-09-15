@@ -16,18 +16,12 @@ public class MapController : MonoBehaviour
 
     [Header("事件系统")]
     public EventPopupUI eventPopup;            // 事件弹窗引用
-<<<<<<< HEAD
-=======
     public CardRemovalUI cardRemovalUI;        // 移除卡牌界面引用
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
     // ===== 运行时数据 =====
     private List<MapNode> _floor;              // 当前层的节点列表
     private MapGenerator _generator = new MapGenerator();
-<<<<<<< HEAD
-=======
     private TextMeshProUGUI _floorTitle;      // 顶部固定层标题
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
     // 跨场景保存的当前层地图数据（static 不会被场景销毁回收）
     private static List<MapNode> _savedFloor;
@@ -81,12 +75,9 @@ public class MapController : MonoBehaviour
         var gm = GameManager.Instance;
         int floor = (gm != null && gm.CurrentFloor > 0) ? gm.CurrentFloor : 1;
 
-<<<<<<< HEAD
-=======
         // 顶部固定层标题（不随滚动移动）
         CreateOrUpdateFloorTitle(floor);
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         var label = Instantiate(floorLabelPrefab, floorContainer);
         label.name = $"Floor_{floor}";
 
@@ -122,25 +113,10 @@ public class MapController : MonoBehaviour
         labelRT.sizeDelta = new Vector2(700, 700);
         labelRT.anchoredPosition = new Vector2(0, 0);
 
-<<<<<<< HEAD
-        // 层标题：顶部居中
-        var labelText = label.GetComponentInChildren<TMP_Text>();
-        if (labelText != null)
-        {
-            labelText.SetText($"第 {floor} 层");
-            labelText.alignment = TMPro.TextAlignmentOptions.Center;
-            var titleRT = (RectTransform)labelText.transform;
-            titleRT.anchorMin = new Vector2(0.5f, 1f);
-            titleRT.anchorMax = new Vector2(0.5f, 1f);
-            titleRT.anchoredPosition = new Vector2(0, -30);
-            titleRT.sizeDelta = new Vector2(200, 40);
-        }
-=======
         // 隐藏预制件自带的层标题文本（改用顶部固定的 FloorTitle）
         var labelText = label.GetComponentInChildren<TMP_Text>();
         if (labelText != null)
             labelText.gameObject.SetActive(false);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         int nodeCount = _floor.Count;
         float spacing = 220f;
@@ -175,15 +151,11 @@ public class MapController : MonoBehaviour
             if (btnUI != null && btnUI.iconImage != null)
             {
                 var iconRT = (RectTransform)btnUI.iconImage.transform;
-<<<<<<< HEAD
-                iconRT.sizeDelta = new Vector2(-10, -25);
-=======
                 // Event nodes: slightly larger icon
                 if (node.nodeType == NodeType.Event)
                     iconRT.sizeDelta = new Vector2(5, -10);
                 else
                     iconRT.sizeDelta = new Vector2(-10, -25);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             }
 
             float xOffset = startX + i * spacing;
@@ -192,8 +164,6 @@ public class MapController : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-=======
     /// <summary>创建或更新场景顶部居中的层标题（加粗）</summary>
     private void CreateOrUpdateFloorTitle(int floor)
     {
@@ -237,7 +207,6 @@ public class MapController : MonoBehaviour
         _floorTitle.SetText($"第 {floor} 层");
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     /// <summary>节点点击回调</summary>
     private void OnNodeClicked(MapNode node)
     {
@@ -284,19 +253,13 @@ public class MapController : MonoBehaviour
     {
         var eventData = EventManager.GetRandomEvent();
 
-<<<<<<< HEAD
-=======
         EnsureCardRemovalUI();
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         if (eventPopup != null)
         {
             eventPopup.Show(eventData, (choice) =>
             {
                 EventManager.ExecuteChoice(choice);
-<<<<<<< HEAD
-                CompleteNode(node);
-=======
 
                 if (EventManager.PendingCardRemoval && cardRemovalUI != null)
                 {
@@ -307,13 +270,10 @@ public class MapController : MonoBehaviour
                 {
                     CompleteNode(node);
                 }
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             });
         }
     }
 
-<<<<<<< HEAD
-=======
     private void EnsureCardRemovalUI()
     {
         if (cardRemovalUI != null) return;
@@ -327,7 +287,6 @@ public class MapController : MonoBehaviour
         cardRemovalUI = go.AddComponent<CardRemovalUI>();
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     // ==========================================
     //  回复点
     // ==========================================

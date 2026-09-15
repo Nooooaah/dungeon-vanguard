@@ -307,10 +307,7 @@ GameObject:
   - component: {fileID: 226522406}
   - component: {fileID: 226522408}
   - component: {fileID: 226522407}
-<<<<<<< HEAD
-=======
   - component: {fileID: 226522409}
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Background
@@ -352,11 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< HEAD
-  m_RaycastTarget: 1
-=======
   m_RaycastTarget: 0
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -380,8 +373,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226522405}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!114 &226522409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,7 +388,6 @@ MonoBehaviour:
   frameDuration: 0.16
   loop: 1
   framesFolder: gif_frames
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 --- !u!1 &354566347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,8 +3412,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841726835}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1904758296
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,7 +3541,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 --- !u!1 &1929306318
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,7 +3983,4 @@ SceneRoots:
   - {fileID: 1658121282}
   - {fileID: 482665322}
   - {fileID: 1576355996}
-<<<<<<< HEAD
-=======
   - {fileID: 1904758298}
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7

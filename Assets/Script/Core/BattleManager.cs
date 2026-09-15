@@ -26,11 +26,7 @@ public class BattleManager : MonoBehaviour
     public ElementContext ElementContext { get; private set; } = new ElementContext();
 
     // ===== 卡牌系统引用（由组员A注册） =====
-<<<<<<< HEAD
-    // CardManager 的 DrawCard / DiscardHand / PlayCard 等功能
-=======
     // BattleUI 的 DrawCard / DiscardHand 等回调
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     public System.Action OnDrawCard;
     public System.Action OnDiscardHand;
     public System.Action OnRestoreEnergy;
@@ -116,15 +112,10 @@ public class BattleManager : MonoBehaviour
         // 1. 回满能量（由Player自己处理，BattleManager通知）
         OnRestoreEnergy?.Invoke();
 
-<<<<<<< HEAD
-        // 2. 抽1张牌
-        OnDrawCard?.Invoke();
-=======
         // 2. 抽5张牌（弃牌制：每回合重新抽满手牌）
         int drawCount = GameConstants.PLAYER_INITIAL_HAND;
         for (int i = 0; i < drawCount; i++)
             OnDrawCard?.Invoke();
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
 
         // 3. 清空本回合元素记录
         ElementContext.Clear();
@@ -178,20 +169,12 @@ public class BattleManager : MonoBehaviour
     /// <summary>玩家点击"结束回合"</summary>
     public void OnEndTurnClicked()
     {
-<<<<<<< HEAD
-        // 保留手牌到下回合（参考杀戮尖塔设计）
-=======
         OnDiscardHand?.Invoke();
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         TurnManager.EndPlayerTurn();
     }
 
     /// <summary>
-<<<<<<< HEAD
-    /// 玩家出牌（组员A的HandController调用此方法）
-=======
     /// 玩家出牌（BattleUI 调用此方法）
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     /// </summary>
     /// <param name="card">卡牌（实现了ICardEffect）</param>
     /// <returns>是否成功打出</returns>
@@ -217,26 +200,19 @@ public class BattleManager : MonoBehaviour
         // 检查是否所有敌人已死
         if (GetAliveEnemies().Count == 0)
         {
-<<<<<<< HEAD
-            TurnManager.DeclareWin();
-=======
             // Delay win declaration to let VFX play
             StartCoroutine(DelayedWin());
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
         }
 
         return true;
     }
 
-<<<<<<< HEAD
-=======
     System.Collections.IEnumerator DelayedWin()
     {
         yield return new WaitForSeconds(0.3f);
         TurnManager.DeclareWin();
     }
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     // ===== 胜负判定 =====
 
     public void CheckBattleResult()
@@ -270,13 +246,10 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("🎉 战斗胜利！");
 
-<<<<<<< HEAD
-=======
             // 将玩家战斗后血量同步到 GameManager（跨战斗保留）
             if (Player is Player playerComp)
                 playerComp.SaveToGameManager();
 
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
             if (gm != null)
             {
                 // Boss 战斗胜利 → 直接通关

@@ -41,10 +41,6 @@ public class ElementSelectionUI : MonoBehaviour
 
     void OnBack()
     {
-<<<<<<< HEAD
-        UnityEngine.SceneManagement.SceneManager.LoadScene(GameConstants.SCENE_MAIN_MENU);
-=======
         UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(GameConstants.SCENE_MAIN_MENU);
->>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
     }
 }
