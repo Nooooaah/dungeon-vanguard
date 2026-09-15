@@ -1,0 +1,25 @@
+Assets/Scenes/MapScene_1.scene removed VLG
+Assets/Scenes/MapScene_1.scene removed LE from TitleText
+Assets/Scenes/MapScene_1.scene removed LE from DescriptionText
+Assets/Scenes/MapScene_1.scene removed LE from ChoicesContainer
+Assets/Scenes/MapScene_1.scene removed CR
+Assets/Scenes/MapScene_2.scene removed VLG
+Assets/Scenes/MapScene_2.scene removed LE from TitleText
+Assets/Scenes/MapScene_2.scene removed LE from DescriptionText
+Assets/Scenes/MapScene_2.scene removed LE from ChoicesContainer
+Assets/Scenes/MapScene_2.scene removed CR
+Assets/Scenes/MapScene_3.scene removed VLG
+Assets/Scenes/MapScene_3.scene removed LE from TitleText
+Assets/Scenes/MapScene_3.scene removed LE from DescriptionText
+Assets/Scenes/MapScene_3.scene removed LE from ChoicesContainer
+Assets/Scenes/MapScene_3.scene removed CR
+Assets/Scenes/MapScene_4.scene removed VLG
+Assets/Scenes/MapScene_4.scene removed LE from TitleText
+Assets/Scenes/MapScene_4.scene removed LE from DescriptionText
+Assets/Scenes/MapScene_4.scene removed LE from ChoicesContainer
+Assets/Scenes/MapScene_4.scene removed CR
+Assets/Scenes/MapScene_5.scene removed VLG
+Assets/Scenes/MapScene_5.scene removed LE from TitleText
+Assets/Scenes/MapScene_5.scene removed LE from DescriptionText
+Assets/Scenes/MapScene_5.scene removed LE from ChoicesContainer
+Assets/Scenes/MapScene_5.scene removed CR

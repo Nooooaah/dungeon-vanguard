@@ -1,0 +1,15 @@
+SimHei SDF: True
+  material: NULL
+  atlasTexture: SimHei SDF Atlas
+  populationMode: Dynamic
+  sourceFontFile: simhei
+  Sub-assets at path:
+    TMP_FontAsset: SimHei SDF
+    Texture2D: SimHei SDF Atlas
+
+  FIXING: Creating material for SimHei SDF
+  Material created and assigned: SimHei SDF Material
+
+msyhl SDF: True
+  material: msyhl Atlas Material
+  atlasTexture: msyhl Atlas

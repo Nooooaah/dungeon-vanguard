@@ -1,0 +1,4 @@
+Remaining children after cleanup:
+  HandBG
+  HandLabel
+Scene saved.

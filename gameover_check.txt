@@ -1,0 +1,10 @@
+TMP count: 7
+  Label | text='返回主菜单' | font=LiberationSans SDF
+  Label | text='重新开始' | font=LiberationSans SDF
+  GoldText | text='获得金币: 150' | font=LiberationSans SDF
+  KillsText | text='击败敌人: 12' | font=LiberationSans SDF
+  FloorText | text='到达层数: 5' | font=LiberationSans SDF
+  Subtitle | text='恭喜征服所有挑战!' | font=LiberationSans SDF
+  Title | text='胜  利' | font=LiberationSans SDF
+
+GameOverUI: found

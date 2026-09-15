@@ -1,0 +1,9 @@
+BattleSceneSetup in scene: False
+
+BattleSceneSetup NOT found in scene!
+Checking Canvas GO components...
+  RectTransform
+  Canvas
+  CanvasScaler
+  GraphicRaycaster
+  BattleUI

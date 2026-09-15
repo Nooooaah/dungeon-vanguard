@@ -1,0 +1,27 @@
+Folders created
+Moved: Assets/Script/Enemies/Enemies/Enemy_花火.asset → Assets/Resources/Enemies/Enemy_花火.asset
+Moved: Assets/Script/Enemies/Enemies/Enemy_龙卷.asset → Assets/Resources/Enemies/Enemy_龙卷.asset
+Moved: Assets/Script/Enemies/Enemies/Enemy_盈盈.asset → Assets/Resources/Enemies/Enemy_盈盈.asset
+Moved: Assets/Script/Enemies/Enemies/Enemy_太虚骨龙.asset → Assets/Resources/Enemies/Enemy_太虚骨龙.asset
+Moved: Assets/Script/Enemies/Enemies/Enemy_元素之贤者.asset → Assets/Resources/Enemies/Enemy_元素之贤者.asset
+Moved: Assets/Script/Enemies/Enemy Prefab/Enemy_花火.prefab → Assets/Prefebs/Enemies/Enemy_花火.prefab
+Moved: Assets/Script/Enemies/Enemy Prefab/Enemy_龙卷.prefab → Assets/Prefebs/Enemies/Enemy_龙卷.prefab
+Moved: Assets/Script/Enemies/Enemy Prefab/Enemy_盈盈.prefab → Assets/Prefebs/Enemies/Enemy_盈盈.prefab
+Moved: Assets/Script/Enemies/Enemy Prefab/Enemy_太虚骨龙.prefab → Assets/Prefebs/Enemies/Enemy_太虚骨龙.prefab
+Moved: Assets/Script/Enemies/Enemy Prefab/Enemy_元素之贤者.prefab → Assets/Prefebs/Enemies/Enemy_元素之贤者.prefab
+Moved: Assets/Script/Enemies/Enemy Prefab/花火.png → Assets/Art2/Enemies/花火.png
+Moved: Assets/Script/Enemies/Enemy Prefab/龙卷.png → Assets/Art2/Enemies/龙卷.png
+Moved: Assets/Script/Enemies/Enemy Prefab/盈盈.png → Assets/Art2/Enemies/盈盈.png
+Moved: Assets/Script/Enemies/Enemy Prefab/太虚骨龙.png → Assets/Art2/Enemies/太虚骨龙.png
+Moved: Assets/Script/Enemies/Enemy Prefab/炎之贤者.png → Assets/Art2/Enemies/炎之贤者.png
+Moved: Assets/Script/Enemies/Player Prefab/Player_fire.prefab → Assets/Prefebs/Players/Player_fire.prefab
+Moved: Assets/Script/Enemies/Player Prefab/Player_water.prefab → Assets/Prefebs/Players/Player_water.prefab
+Moved: Assets/Script/Enemies/Player Prefab/player_wind.prefab → Assets/Prefebs/Players/player_wind.prefab
+Moved: Assets/Script/Enemies/Player Prefab/fire.png → Assets/Art2/Players/fire.png
+Moved: Assets/Script/Enemies/Player Prefab/water.png → Assets/Art2/Players/water.png
+Moved: Assets/Script/Enemies/Player Prefab/wind.png → Assets/Art2/Players/wind.png
+Moved: Assets/Script/Enemies/Enemy Prefab/EnemyBase.cs → Assets/Script/Enemies/EnemyBase.cs
+Moved: Assets/Script/Enemies/Enemy Prefab/EnemyAI.cs → Assets/Script/Enemies/EnemyAI.cs
+Moved: Assets/Script/Enemies/Player Prefab/Player.cs → Assets/Script/Enemies/Player.cs
+Old folders deleted
+Done!

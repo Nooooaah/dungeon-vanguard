@@ -1,0 +1,20 @@
+{
+  "unity_port": -1,
+<<<<<<< HEAD
+  "stream_port": 64586,
+  "created_date": "2026-07-12T05:56:26.1265905Z",
+  "project_path": "D:/Program Files (x86)/Git/learn/新建文件夹/dungeon_-vanguard/dungeon_-vanguard/My project/Assets",
+  "reloading": false,
+  "reason": "stopped",
+  "seq": 1,
+  "last_heartbeat": "2026-07-14T09:08:30.3359930Z"
+=======
+  "stream_port": 62659,
+  "created_date": "2026-07-14T03:39:25.1080186Z",
+  "project_path": "E:/git_home/dungeon_-vanguard/My project/Assets",
+  "reloading": false,
+  "reason": "stopped",
+  "seq": 1,
+  "last_heartbeat": "2026-07-14T08:10:45.6890612Z"
+>>>>>>> dd15dc953bda76878a619e06d67d3f5c5cb965a7
+}

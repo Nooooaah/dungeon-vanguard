@@ -1,0 +1,240 @@
+=== CardData assets (15) ===
+  Assets/Resources/Fire_火焰护体.asset | name=火焰护体 | element=Fire | cost=2 | dmg=0 | shield=4 | heal=0 | draw=0
+  Assets/Resources/Fire_火球术.asset | name=火球术 | element=Fire | cost=1 | dmg=6 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Fire_灼烧.asset | name=灼烧 | element=Fire | cost=1 | dmg=3 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Fire_烈焰冲击.asset | name=烈焰冲击 | element=Fire | cost=2 | dmg=12 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Fire_焚天.asset | name=焚天 | element=Fire | cost=2 | dmg=20 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Water_冰盾.asset | name=冰盾 | element=Water | cost=1 | dmg=0 | shield=6 | heal=0 | draw=0
+  Assets/Resources/Water_寒冰禁锢.asset | name=寒冰禁锢 | element=Water | cost=2 | dmg=4 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Water_水箭.asset | name=水箭 | element=Water | cost=1 | dmg=5 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Water_治疗之雨.asset | name=治疗之雨 | element=Water | cost=1 | dmg=0 | shield=0 | heal=6 | draw=0
+  Assets/Resources/Water_潮汐之力.asset | name=潮汐之力 | element=Water | cost=2 | dmg=0 | shield=3 | heal=10 | draw=0
+  Assets/Resources/Wind_净妖傩舞.asset | name=净妖傩舞 | element=Wind | cost=2 | dmg=16 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Wind_狂风.asset | name=狂风 | element=Wind | cost=2 | dmg=6 | shield=0 | heal=0 | draw=3
+  Assets/Resources/Wind_疾风步.asset | name=疾风步 | element=Wind | cost=0 | dmg=0 | shield=2 | heal=0 | draw=2
+  Assets/Resources/Wind_连环风刃.asset | name=连环风刃 | element=Wind | cost=2 | dmg=6 | shield=0 | heal=0 | draw=0
+  Assets/Resources/Wind_风刃.asset | name=风刃 | element=Wind | cost=1 | dmg=4 | shield=0 | heal=0 | draw=1
+
+=== EnemyData assets (5) ===
+  Assets/Script/Enemies/Enemies/Enemy_元素之贤者.asset | name=炎之贤者 | hp=55 | type=Elite
+  Assets/Script/Enemies/Enemies/Enemy_太虚骨龙.asset | name=太虚骨龙 | hp=90 | type=Boss
+  Assets/Script/Enemies/Enemies/Enemy_盈盈.asset | name=盈盈 | hp=30 | type=Normal
+  Assets/Script/Enemies/Enemies/Enemy_花火.asset | name=花火 | hp=25 | type=Normal
+  Assets/Script/Enemies/Enemies/Enemy_龙卷.asset | name=龙卷 | hp=22 | type=Normal
+
+=== CardTemplate.prefab components ===
+  RectTransform
+  Shadow
+  CardUI
+  CardDragHandler
+  CardHoverEffect
+  CardPlayAnimation
+  Card
+  Button
+  CanvasRenderer
+  Image
+
+=== CardTemplate children ===
+  Background
+  CardFrame
+  ManaCrystal
+  ElementBadge
+  NameText
+  ArtArea
+  CostOverlay
+  DescPanel
+  DescText
+  AttackIcon
+  HealthIcon
+
+=== Art/Cards directory ===
+  Assets/Art/Cards/CardFrame.png
+  Assets/Art/Cards/Fire_BG.png
+  Assets/Art/Cards/Water_BG.png
+  Assets/Art/Cards/Wind_BG.png
+
+=== Art/Effects directory ===
+  Assets/Art/Effects/Fire_Art.png
+  Assets/Art/Effects/Fire_Symbol.png
+  Assets/Art/Effects/FireBadge.png
+  Assets/Art/Effects/Water_Art.png
+  Assets/Art/Effects/Water_Symbol.png
+  Assets/Art/Effects/WaterBadge.png
+  Assets/Art/Effects/Wind_Art.png
+  Assets/Art/Effects/Wind_Symbol.png
+  Assets/Art/Effects/WindBadge.png
+
+=== Art/UI directory ===
+  Assets/Art/UI/AttackIcon.png
+  Assets/Art/UI/DescPanel.png
+  Assets/Art/UI/element
+  Assets/Art/UI/element/像素-水滴.png
+  Assets/Art/UI/element/像素-火苗.png
+  Assets/Art/UI/element/龙卷风.png
+  Assets/Art/UI/elementSelection.jpg
+  Assets/Art/UI/HealthIcon.png
+  Assets/Art/UI/icon_battle.png
+  Assets/Art/UI/icon_boss.png
+  Assets/Art/UI/icon_elite.png
+  Assets/Art/UI/icon_event.png
+  Assets/Art/UI/icon_rest.png
+  Assets/Art/UI/ManaCrystal.png
+  Assets/Art/UI/OIP-C.jpg
+  Assets/Art/UI/PNG
+  Assets/Art/UI/PNG/Default
+  Assets/Art/UI/PNG/Default/bush1.png
+  Assets/Art/UI/PNG/Default/bush2.png
+  Assets/Art/UI/PNG/Default/bush3.png
+  Assets/Art/UI/PNG/Default/bush4.png
+  Assets/Art/UI/PNG/Default/bushAlt1.png
+  Assets/Art/UI/PNG/Default/bushAlt2.png
+  Assets/Art/UI/PNG/Default/bushAlt3.png
+  Assets/Art/UI/PNG/Default/bushAlt4.png
+  Assets/Art/UI/PNG/Default/bushOrange1.png
+  Assets/Art/UI/PNG/Default/bushOrange2.png
+  Assets/Art/UI/PNG/Default/bushOrange3.png
+  Assets/Art/UI/PNG/Default/bushOrange4.png
+  Assets/Art/UI/PNG/Default/cactus1.png
+  Assets/Art/UI/PNG/Default/cactus2.png
+  Assets/Art/UI/PNG/Default/cactus3.png
+  Assets/Art/UI/PNG/Default/castleSmall.png
+  Assets/Art/UI/PNG/Default/castleSmallAlt.png
+  Assets/Art/UI/PNG/Default/castleWall.png
+  Assets/Art/UI/PNG/Default/castleWallAlt.png
+  Assets/Art/UI/PNG/Default/cloud1.png
+  Assets/Art/UI/PNG/Default/cloud2.png
+  Assets/Art/UI/PNG/Default/cloud3.png
+  Assets/Art/UI/PNG/Default/cloud4.png
+  Assets/Art/UI/PNG/Default/cloud5.png
+  Assets/Art/UI/PNG/Default/cloud6.png
+  Assets/Art/UI/PNG/Default/cloud7.png
+  Assets/Art/UI/PNG/Default/cloud8.png
+  Assets/Art/UI/PNG/Default/fence.png
+  Assets/Art/UI/PNG/Default/fenceIron.png
+  Assets/Art/UI/PNG/Default/house1.png
+  Assets/Art/UI/PNG/Default/house2.png
+  Assets/Art/UI/PNG/Default/houseAlt1.png
+  Assets/Art/UI/PNG/Default/houseAlt2.png
+  Assets/Art/UI/PNG/Default/houseSmall1.png
+  Assets/Art/UI/PNG/Default/houseSmall2.png
+  Assets/Art/UI/PNG/Default/houseSmallAlt1.png
+  Assets/Art/UI/PNG/Default/houseSmallAlt2.png
+  Assets/Art/UI/PNG/Default/moon.png
+  Assets/Art/UI/PNG/Default/moonFull.png
+  Assets/Art/UI/PNG/Default/pyramid.png
+  Assets/Art/UI/PNG/Default/pyramidMayan.png
+  Assets/Art/UI/PNG/Default/sun.png
+  Assets/Art/UI/PNG/Default/tower.png
+  Assets/Art/UI/PNG/Default/towerAlt.png
+  Assets/Art/UI/PNG/Default/towerSmall.png
+  Assets/Art/UI/PNG/Default/towerSmallAlt.png
+  Assets/Art/UI/PNG/Default/tree.png
+  Assets/Art/UI/PNG/Default/treeDead.png
+  Assets/Art/UI/PNG/Default/treeFrozen.png
+  Assets/Art/UI/PNG/Default/treeLong.png
+  Assets/Art/UI/PNG/Default/treeLongFrozen.png
+  Assets/Art/UI/PNG/Default/treeLongOrange.png
+  Assets/Art/UI/PNG/Default/treeLongSnow.png
+  Assets/Art/UI/PNG/Default/treeOrange.png
+  Assets/Art/UI/PNG/Default/treePalm.png
+  Assets/Art/UI/PNG/Default/treePine.png
+  Assets/Art/UI/PNG/Default/treePineFrozen.png
+  Assets/Art/UI/PNG/Default/treePineOrange.png
+  Assets/Art/UI/PNG/Default/treePineSnow.png
+  Assets/Art/UI/PNG/Default/treeSmall_green1.png
+  Assets/Art/UI/PNG/Default/treeSmall_green2.png
+  Assets/Art/UI/PNG/Default/treeSmall_green3.png
+  Assets/Art/UI/PNG/Default/treeSmall_greenAlt1.png
+  Assets/Art/UI/PNG/Default/treeSmall_greenAlt2.png
+  Assets/Art/UI/PNG/Default/treeSmall_greenAlt3.png
+  Assets/Art/UI/PNG/Default/treeSmall_orange1.png
+  Assets/Art/UI/PNG/Default/treeSmall_orange2.png
+  Assets/Art/UI/PNG/Default/treeSmall_orange3.png
+  Assets/Art/UI/PNG/Default/treeSnow.png
+  Assets/Art/UI/PNG/Retina
+  Assets/Art/UI/PNG/Retina/bush1.png
+  Assets/Art/UI/PNG/Retina/bush2.png
+  Assets/Art/UI/PNG/Retina/bush3.png
+  Assets/Art/UI/PNG/Retina/bush4.png
+  Assets/Art/UI/PNG/Retina/bushAlt1.png
+  Assets/Art/UI/PNG/Retina/bushAlt2.png
+  Assets/Art/UI/PNG/Retina/bushAlt3.png
+  Assets/Art/UI/PNG/Retina/bushAlt4.png
+  Assets/Art/UI/PNG/Retina/bushOrange1.png
+  Assets/Art/UI/PNG/Retina/bushOrange2.png
+  Assets/Art/UI/PNG/Retina/bushOrange3.png
+  Assets/Art/UI/PNG/Retina/bushOrange4.png
+  Assets/Art/UI/PNG/Retina/cactus1.png
+  Assets/Art/UI/PNG/Retina/cactus2.png
+  Assets/Art/UI/PNG/Retina/cactus3.png
+  Assets/Art/UI/PNG/Retina/castleSmall.png
+  Assets/Art/UI/PNG/Retina/castleSmallAlt.png
+  Assets/Art/UI/PNG/Retina/castleWall.png
+  Assets/Art/UI/PNG/Retina/castleWallAlt.png
+  Assets/Art/UI/PNG/Retina/cloud1.png
+  Assets/Art/UI/PNG/Retina/cloud2.png
+  Assets/Art/UI/PNG/Retina/cloud3.png
+  Assets/Art/UI/PNG/Retina/cloud4.png
+  Assets/Art/UI/PNG/Retina/cloud5.png
+  Assets/Art/UI/PNG/Retina/cloud6.png
+  Assets/Art/UI/PNG/Retina/cloud7.png
+  Assets/Art/UI/PNG/Retina/cloud8.png
+  Assets/Art/UI/PNG/Retina/fence.png
+  Assets/Art/UI/PNG/Retina/fenceIron.png
+  Assets/Art/UI/PNG/Retina/house1.png
+  Assets/Art/UI/PNG/Retina/house2.png
+  Assets/Art/UI/PNG/Retina/houseAlt1.png
+  Assets/Art/UI/PNG/Retina/houseAlt2.png
+  Assets/Art/UI/PNG/Retina/houseSmall1.png
+  Assets/Art/UI/PNG/Retina/houseSmall2.png
+  Assets/Art/UI/PNG/Retina/houseSmallAlt1.png
+  Assets/Art/UI/PNG/Retina/houseSmallAlt2.png
+  Assets/Art/UI/PNG/Retina/moon.png
+  Assets/Art/UI/PNG/Retina/moonFull.png
+  Assets/Art/UI/PNG/Retina/pyramid.png
+  Assets/Art/UI/PNG/Retina/pyramidMayan.png
+  Assets/Art/UI/PNG/Retina/sun.png
+  Assets/Art/UI/PNG/Retina/tower.png
+  Assets/Art/UI/PNG/Retina/towerAlt.png
+  Assets/Art/UI/PNG/Retina/towerSmall.png
+  Assets/Art/UI/PNG/Retina/towerSmallAlt.png
+  Assets/Art/UI/PNG/Retina/tree.png
+  Assets/Art/UI/PNG/Retina/treeDead.png
+  Assets/Art/UI/PNG/Retina/treeFrozen.png
+  Assets/Art/UI/PNG/Retina/treeLong.png
+  Assets/Art/UI/PNG/Retina/treeLongFrozen.png
+  Assets/Art/UI/PNG/Retina/treeLongOrange.png
+  Assets/Art/UI/PNG/Retina/treeLongSnow.png
+  Assets/Art/UI/PNG/Retina/treeOrange.png
+  Assets/Art/UI/PNG/Retina/treePalm.png
+  Assets/Art/UI/PNG/Retina/treePine.png
+  Assets/Art/UI/PNG/Retina/treePineFrozen.png
+  Assets/Art/UI/PNG/Retina/treePineOrange.png
+  Assets/Art/UI/PNG/Retina/treePineSnow.png
+  Assets/Art/UI/PNG/Retina/treeSmall_green1.png
+  Assets/Art/UI/PNG/Retina/treeSmall_green2.png
+  Assets/Art/UI/PNG/Retina/treeSmall_green3.png
+  Assets/Art/UI/PNG/Retina/treeSmall_greenAlt1.png
+  Assets/Art/UI/PNG/Retina/treeSmall_greenAlt2.png
+  Assets/Art/UI/PNG/Retina/treeSmall_greenAlt3.png
+  Assets/Art/UI/PNG/Retina/treeSmall_orange1.png
+  Assets/Art/UI/PNG/Retina/treeSmall_orange2.png
+  Assets/Art/UI/PNG/Retina/treeSmall_orange3.png
+  Assets/Art/UI/PNG/Retina/treeSnow.png
+
+=== Resources directory ===
+  Assets/Resources/Fire_火焰护体.asset
+  Assets/Resources/Fire_火球术.asset
+  Assets/Resources/Fire_灼烧.asset
+  Assets/Resources/Fire_烈焰冲击.asset
+  Assets/Resources/Fire_焚天.asset
+  Assets/Resources/Water_冰盾.asset
+  Assets/Resources/Water_寒冰禁锢.asset
+  Assets/Resources/Water_水箭.asset
+  Assets/Resources/Water_治疗之雨.asset
+  Assets/Resources/Water_潮汐之力.asset
+  Assets/Resources/Wind_净妖傩舞.asset
+  Assets/Resources/Wind_狂风.asset
+  Assets/Resources/Wind_疾风步.asset
+  Assets/Resources/Wind_连环风刃.asset
+  Assets/Resources/Wind_风刃.asset

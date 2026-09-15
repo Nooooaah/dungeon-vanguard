@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc9b0cce05c6984184e0d8129caff08, type: 3}
+  m_Name: "Water_\u51B0\u76FE"
+  m_EditorClassIdentifier: 
+  cardName: "\u51B0\u76FE"
+  element: 2
+  cardType: 0
+  cost: 1
+  damage: 0
+  shield: 6
+  heal: 0
+  draw: 0
+  buffType: 0
+  buffValue: 0
+  buffDuration: 0
+  targetSkipTurn: 0
+  selfDamage: 0
+  dotDamage: 0
+  dotAmount: 0
+  artwork: {fileID: 21300000, guid: b9541ea34e17cdf4191f445b8c5aac46, type: 3}
+  description: "\u51DD\u7ED3\u5BD2\u51B0\u4E3A\u76FE\uFF0C\u83B7\u5F976\u70B9\u62A4\u76FE\uFF0C\u51B0\u5BD2\u4E4B\u529B\u4EE4\u4EBA\u6218\u6817\u3002"

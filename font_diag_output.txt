@@ -1,0 +1,15 @@
+Default: LiberationSans SDF
+populationMode: Static
+sourceFont: ?
+Fallback count: 0
+simhei.ttf: found
+
+All TMP_FontAssets (8):
+  Assets/msyhbd SDF.asset | source=msyhbd | dynamic=Dynamic
+  Assets/msyhl SDF.asset | source=msyhl | dynamic=Dynamic
+  Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset | source=Anton | dynamic=Dynamic
+  Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset | source=Bangers | dynamic=Dynamic
+  Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset | source=Electronic Highway Sign | dynamic=Dynamic
+  Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset | source=Oswald-Bold | dynamic=Dynamic
+  Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset | source=Roboto-Bold | dynamic=Dynamic
+  Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset | source=? | dynamic=Static

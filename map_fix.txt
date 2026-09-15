@@ -1,0 +1,8 @@
+Assets/Scenes/MapScene_2.scene - EventPopup size=(0.00, 0.00)
+  -> Fixed and saved
+Assets/Scenes/MapScene_3.scene - EventPopup size=(0.00, 0.00)
+  -> Fixed and saved
+Assets/Scenes/MapScene_4.scene - EventPopup size=(0.00, 0.00)
+  -> Fixed and saved
+Assets/Scenes/MapScene_5.scene - EventPopup size=(0.00, 0.00)
+  -> Fixed and saved

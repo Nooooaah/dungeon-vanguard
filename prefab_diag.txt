@@ -1,0 +1,82 @@
+=== CardTemplate.prefab hierarchy ===
+- CardTemplate
+  RT: sizeDelta=(300.00, 420.00) anchoredPos=(-355.83, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+  Image: sprite=null color=RGBA(0.000, 0.000, 0.000, 0.000) raycastTarget=True
+  Button present
+  - Background
+    RT: sizeDelta=(300.00, 420.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=Fire_BG color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+  - CardFrame
+    RT: sizeDelta=(300.00, 420.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=CardFrame color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+  - ManaCrystal
+    RT: sizeDelta=(56.00, 56.00) anchoredPos=(-118.00, 168.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=ManaCrystal color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+    - CostText
+      RT: sizeDelta=(56.00, 56.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+      TMP: text='' fontSize=28 color=RGBA(1.000, 1.000, 1.000, 1.000) alignment=Center
+  - ElementBadge
+    RT: sizeDelta=(56.00, 56.00) anchoredPos=(118.00, 168.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=FireBadge color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+    - ElementText
+      RT: sizeDelta=(56.00, 56.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+      TMP: text='火' fontSize=26 color=RGBA(1.000, 1.000, 1.000, 1.000) alignment=Center
+  - NameText
+    RT: sizeDelta=(180.00, 35.00) anchoredPos=(0.00, 152.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    TMP: text='' fontSize=22 color=RGBA(1.000, 0.950, 0.700, 1.000) alignment=Center
+  - ArtArea
+    RT: sizeDelta=(240.00, 160.00) anchoredPos=(0.00, 30.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=null color=RGBA(1.000, 1.000, 1.000, 0.120) raycastTarget=False
+  - CostOverlay
+    RT: sizeDelta=(0.00, 0.00) anchoredPos=(0.00, 0.00) anchors=((0.00, 0.00),(1.00, 1.00))
+    Image: sprite=null color=RGBA(0.200, 0.200, 0.200, 0.700) raycastTarget=False
+  - DescPanel
+    RT: sizeDelta=(268.00, 150.00) anchoredPos=(0.00, -95.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=DescPanel color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+  - DescText
+    RT: sizeDelta=(238.00, 125.00) anchoredPos=(0.00, -95.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    TMP: text='' fontSize=15 color=RGBA(0.920, 0.920, 0.920, 1.000) alignment=Center
+  - AttackIcon
+    RT: sizeDelta=(64.00, 64.00) anchoredPos=(-108.00, -170.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=AttackIcon color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+    - AttackText
+      RT: sizeDelta=(64.00, 64.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+      TMP: text='6' fontSize=26 color=RGBA(1.000, 1.000, 1.000, 1.000) alignment=Center
+  - HealthIcon
+    RT: sizeDelta=(64.00, 64.00) anchoredPos=(108.00, -170.00) anchors=((0.50, 0.50),(0.50, 0.50))
+    Image: sprite=HealthIcon color=RGBA(1.000, 1.000, 1.000, 1.000) raycastTarget=False
+    - HealthText
+      RT: sizeDelta=(64.00, 64.00) anchoredPos=(0.00, 0.00) anchors=((0.50, 0.50),(0.50, 0.50))
+      TMP: text='5' fontSize=26 color=RGBA(1.000, 1.000, 1.000, 1.000) alignment=Center
+
+=== Root components ===
+  RectTransform
+  Shadow
+  CardUI
+  CardDragHandler
+  CardHoverEffect
+  CardPlayAnimation
+  Card
+  Button
+  CanvasRenderer
+  Image
+
+=== Card component UI refs ===
+  nameText: NULL
+  costText: NULL
+  descText: NULL
+  damageText: NULL
+  elementIcon: ElementBadge
+  cardBackground: Background
+  button: CardTemplate
+  costTooHighOverlay: CostOverlay
+
+=== CardUI component refs ===
+  backgroundImage: Background
+  frameImage: CardFrame
+  elementBadge: ElementBadge
+  artImage: ArtArea
+  nameText: NULL
+  costText: NULL
+  descriptionText: NULL
+  elementText: NULL

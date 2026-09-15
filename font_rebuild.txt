@@ -1,0 +1,11 @@
+msyhl.ttc: True
+Deleted old msyhl SDF
+Created new msyhl SDF at Assets/msyhl SDF.asset
+simhei.ttf: True
+Deleted old SimHei SDF
+Created new SimHei SDF at Assets/Settings/SimHei SDF.asset
+LiberationSans SDF -> fallback SimHei SDF
+msyhl SDF -> fallback SimHei SDF
+msyhbd SDF -> fallback SimHei SDF
+
+Done! Fonts rebuilt.

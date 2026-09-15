@@ -1,0 +1,29 @@
+Current build scenes:
+  Assets/Scenes/MainMenu.scene enabled=True guid=7702b6c83b006974aad134115fae374b
+  Assets/Scenes/ElementSelection.scene enabled=True guid=5f780bee6b93ff34ebdd041240f936d8
+  Assets/Scenes/MapScenes.scene enabled=True guid=56b11cb3779a52b48b000abc7b6ce1fb
+  Assets/Scenes/BattleScene.scene enabled=True guid=b880855d8cf714d45902130a0441cf3c
+  Assets/Scenes/RewardScene.scene enabled=True guid=1b704376f70af864eb0f73a2e2becb34
+  Assets/Scenes/GameOverScene.scene enabled=True guid=f4e191db3bcacb1439c8e34d084a9883
+  Assets/Scenes/MapScene_1.scene enabled=True guid=402c24a5529d15b44805ad9d7b4a1461
+  Assets/Scenes/MapScene_2.scene enabled=True guid=ad592502f4ac3b9439678dac375b8e92
+  Assets/Scenes/MapScene_3.scene enabled=True guid=95ab8b9176f21a54492224dcd3b72bfd
+  Assets/Scenes/MapScene_4.scene enabled=True guid=56e36dac95c64d549ae3c8f58ae90761
+  Assets/Scenes/MapScene_5.scene enabled=True guid=f1be049325fdd0d4ba3a6f454749ab36
+
+New BattleScene GUID: 5b634331e77324f48a753e99ef37e659
+Updated BattleScene entry
+Build settings updated!
+
+Updated build scenes:
+  Assets/Scenes/MainMenu.scene enabled=True
+  Assets/Scenes/ElementSelection.scene enabled=True
+  Assets/Scenes/MapScenes.scene enabled=True
+  Assets/Scenes/BattleScene.scene enabled=True
+  Assets/Scenes/RewardScene.scene enabled=True
+  Assets/Scenes/GameOverScene.scene enabled=True
+  Assets/Scenes/MapScene_1.scene enabled=True
+  Assets/Scenes/MapScene_2.scene enabled=True
+  Assets/Scenes/MapScene_3.scene enabled=True
+  Assets/Scenes/MapScene_4.scene enabled=True
+  Assets/Scenes/MapScene_5.scene enabled=True

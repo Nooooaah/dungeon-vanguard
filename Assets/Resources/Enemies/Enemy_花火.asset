@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913bf6b96fc60e34d9c49892453d191b, type: 3}
+  m_Name: "Enemy_\u82B1\u706B"
+  m_EditorClassIdentifier: 
+  enemyName: "\u82B1\u706B"
+  element: 1
+  type: 0
+  maxHp: 25
+  actions:
+  - intentText: "\u653B\u51FB8"
+    actionType: 0
+    damage: 8
+    shield: 0
+    heal: 0
+    weight: 60
+  - intentText: "\u653B\u51FB5 \u62A4\u76FE3"
+    actionType: 3
+    damage: 5
+    shield: 3
+    heal: 0
+    weight: 40
+  rageThreshold: 0
+  rageActions: []

@@ -1,0 +1,138 @@
+=== CardData assets (15) ===
+
+Name: 火焰护体
+  element=Fire cost=2 type=Attack
+  damage=0 shield=4 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '获得4护盾
+反伤3'
+  GetDescription(): '获得4护盾
+反伤3'
+  path: Assets/Resources/Fire_火焰护体.asset
+
+Name: 火球术
+  element=Fire cost=1 type=Attack
+  damage=6 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成6点伤害'
+  GetDescription(): '造成6点伤害'
+  path: Assets/Resources/Fire_火球术.asset
+
+Name: 灼烧
+  element=Fire cost=1 type=Attack
+  damage=3 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成3伤害
+每回合扣2(持续2回合)'
+  GetDescription(): '造成3伤害
+每回合扣2(持续2回合)'
+  path: Assets/Resources/Fire_灼烧.asset
+
+Name: 烈焰冲击
+  element=Fire cost=2 type=Attack
+  damage=12 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成12点伤害'
+  GetDescription(): '造成12点伤害'
+  path: Assets/Resources/Fire_烈焰冲击.asset
+
+Name: 焚天
+  element=Fire cost=2 type=Attack
+  damage=20 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成20伤害
+自身扣2HP'
+  GetDescription(): '造成20伤害
+自身扣2HP'
+  path: Assets/Resources/Fire_焚天.asset
+
+Name: 冰盾
+  element=Water cost=1 type=Attack
+  damage=0 shield=6 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '获得6护盾'
+  GetDescription(): '获得6护盾'
+  path: Assets/Resources/Water_冰盾.asset
+
+Name: 寒冰禁锢
+  element=Water cost=2 type=Attack
+  damage=4 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成4伤害
+目标下回合跳过'
+  GetDescription(): '造成4伤害
+目标下回合跳过'
+  path: Assets/Resources/Water_寒冰禁锢.asset
+
+Name: 水箭
+  element=Water cost=1 type=Attack
+  damage=5 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成5点伤害'
+  GetDescription(): '造成5点伤害'
+  path: Assets/Resources/Water_水箭.asset
+
+Name: 治疗之雨
+  element=Water cost=1 type=Attack
+  damage=0 shield=0 heal=6 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '回复6HP'
+  GetDescription(): '回复6HP'
+  path: Assets/Resources/Water_治疗之雨.asset
+
+Name: 潮汐之力
+  element=Water cost=2 type=Attack
+  damage=0 shield=3 heal=10 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '回复10HP
+获得3护盾'
+  GetDescription(): '回复10HP
+获得3护盾'
+  path: Assets/Resources/Water_潮汐之力.asset
+
+Name: 净妖傩舞
+  element=Wind cost=2 type=Attack
+  damage=16 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成16点伤害'
+  GetDescription(): '造成16点伤害'
+  path: Assets/Resources/Wind_净妖傩舞.asset
+
+Name: 狂风
+  element=Wind cost=2 type=Attack
+  damage=6 shield=0 heal=0 draw=3
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成6伤害
+抽3张牌'
+  GetDescription(): '造成6伤害
+抽3张牌'
+  path: Assets/Resources/Wind_狂风.asset
+
+Name: 疾风步
+  element=Wind cost=0 type=Attack
+  damage=0 shield=2 heal=0 draw=2
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '抽2张牌
+获得2护盾'
+  GetDescription(): '抽2张牌
+获得2护盾'
+  path: Assets/Resources/Wind_疾风步.asset
+
+Name: 连环风刃
+  element=Wind cost=2 type=Attack
+  damage=6 shield=0 heal=0 draw=0
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成6点伤害'
+  GetDescription(): '造成6点伤害'
+  path: Assets/Resources/Wind_连环风刃.asset
+
+Name: 风刃
+  element=Wind cost=1 type=Attack
+  damage=4 shield=0 heal=0 draw=1
+  buffType=None buffValue=0 buffDuration=0
+  description(原): '造成4伤害
+抽1张牌'
+  GetDescription(): '造成4伤害
+抽1张牌'
+  path: Assets/Resources/Wind_风刃.asset
+

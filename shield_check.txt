@@ -1,0 +1,33 @@
+EnemyHPBar: EnemyHPBar
+  hpFill: HPFill (UnityEngine.UI.Image)
+  hpText: HPText (TMPro.TextMeshProUGUI)
+  hpGreen: RGBA(0.150, 0.700, 0.200, 1.000)
+  hpYellow: RGBA(0.900, 0.750, 0.150, 1.000)
+  hpRed: RGBA(0.800, 0.150, 0.150, 1.000)
+  shieldFill: ShieldFill (UnityEngine.UI.Image)
+  shieldText: ShieldText (TMPro.TextMeshProUGUI)
+  shieldContainer: ShieldContainer (UnityEngine.GameObject)
+  energyIcons: UnityEngine.UI.Image[]
+  energyActive: RGBA(0.150, 0.400, 0.850, 1.000)
+  energyDepleted: RGBA(0.200, 0.200, 0.220, 1.000)
+  lerpSpeed: 5
+
+Children:
+  [0] HPBG active=True img=RGBA(0.150, 0.080, 0.080, 0.900)
+  [1] HPText active=True text=0/0
+  [2] ShieldContainer active=False img=RGBA(0.080, 0.080, 0.080, 0.800)
+  [3] ShieldText active=True text=
+
+PlayerHPBar: PlayerHPBar
+  hpFill: HPFill (UnityEngine.UI.Image)
+  hpText: HPText (TMPro.TextMeshProUGUI)
+  hpGreen: RGBA(0.150, 0.700, 0.200, 1.000)
+  hpYellow: RGBA(0.900, 0.750, 0.150, 1.000)
+  hpRed: RGBA(0.800, 0.150, 0.150, 1.000)
+  shieldFill: ShieldFill (UnityEngine.UI.Image)
+  shieldText: ShieldText (TMPro.TextMeshProUGUI)
+  shieldContainer: ShieldContainer (UnityEngine.GameObject)
+  energyIcons: UnityEngine.UI.Image[]
+  energyActive: RGBA(0.150, 0.400, 0.850, 1.000)
+  energyDepleted: RGBA(0.200, 0.200, 0.220, 1.000)
+  lerpSpeed: 5

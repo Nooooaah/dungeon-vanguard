@@ -1,0 +1,10 @@
+SimHei SDF: True
+  material: SimHei SDF Material
+  atlasTexture: SimHei SDF Atlas
+  m_AtlasTextures.arraySize: 4
+    [0] = SimHei SDF Atlas
+    [1] = SimHei SDF Atlas 1
+    [2] = NULL
+    [3] = NULL
+  FIXED: assigned atlas texture to material._MainTex
+  Saved.

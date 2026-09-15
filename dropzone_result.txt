@@ -1,0 +1,4 @@
+EnemyArea tag set to: DropZone
+EnemyArea Image.raycastTarget = true
+Enemy tag: Untagged (leaving as is - not a UI element)
+Scene saved.

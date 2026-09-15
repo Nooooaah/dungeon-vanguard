@@ -1,0 +1,25 @@
+=== msyhl SDF glyph count: 107
+=== msyhl SDF character count: 107
+CJK chars in msyhl: 72
+
+=== LiberationSans SDF glyph count: 250
+=== LiberationSans SDF character count: 250
+CJK chars in LiberationSans: 0
+
+=== msyhl.ttc ===
+found: True
+=== msyhbd.ttc ===
+found: True
+=== simhei.ttf ===
+found: True
+
+=== msyhl SDF creation settings ===
+atlasPopulationMode: Dynamic
+atlasWidth: 1024
+atlasHeight: 1024
+atlasPadding: 9
+pointSize: Dynamic
+
+sourceFontFile: msyhl
+sourceFontPath: Assets/msyhl.ttc
+msyhl fallbacks: 0

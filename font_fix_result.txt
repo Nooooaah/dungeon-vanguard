@@ -1,0 +1,11 @@
+Step1: simhei.ttf loaded = True
+Step1: SimHei SDF atlas = 1024x1024
+Step1: SimHei SDF created
+Step2: LiberationSans SDF fixed
+Step3: msyhl SDF fixed (fallback=SimHei SDF, atlas=1024x1024)
+Step4: msyhbd SDF fixed
+Step5: Fixed Assets/Prefebs/Map/FloorLabel.prefab > TitleText
+Step5: Fixed Assets/Prefebs/Map/NodeButton.prefab > Text (TMP)
+Step5: Fixed Assets/Prefebs/UI/ChoiceButton.prefab > Text (TMP)
+
+Step7: Done.

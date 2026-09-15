@@ -1,0 +1,8 @@
+EventPopupUI found: False
+EventPopupUI NOT in scene!
+
+MapController found: True
+  eventPopup: EventPopup
+
+GameObjects with 'Event' in name:
+  EventSystem active=True

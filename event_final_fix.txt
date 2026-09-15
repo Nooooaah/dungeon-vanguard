@@ -1,0 +1,10 @@
+Assets/Scenes/MapScene_1.scene - removed Image from EventPopup root
+Assets/Scenes/MapScene_1.scene - saved
+Assets/Scenes/MapScene_2.scene - removed Image from EventPopup root
+Assets/Scenes/MapScene_2.scene - saved
+Assets/Scenes/MapScene_3.scene - removed Image from EventPopup root
+Assets/Scenes/MapScene_3.scene - saved
+Assets/Scenes/MapScene_4.scene - removed Image from EventPopup root
+Assets/Scenes/MapScene_4.scene - saved
+Assets/Scenes/MapScene_5.scene - removed Image from EventPopup root
+Assets/Scenes/MapScene_5.scene - saved

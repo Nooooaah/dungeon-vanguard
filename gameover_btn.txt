@@ -1,0 +1,16 @@
+titleText: NULL
+subtitleText: NULL
+backgroundImage: NULL
+floorText: NULL
+killsText: NULL
+goldText: NULL
+restartButton: NULL
+mainMenuButton: NULL
+victoryColor: RGBA(0.850, 0.700, 0.300, 1.000)
+defeatColor: RGBA(0.700, 0.150, 0.150, 1.000)
+
+RestartBtn: Button=True listeners=0
+MainMenuBtn: Button=True listeners=0
+
+GameManager.Instance: False
+GameManager GO in scene: False

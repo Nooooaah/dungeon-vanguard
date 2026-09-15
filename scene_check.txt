@@ -1,0 +1,7 @@
+File exists: True
+Size: 41247 bytes
+Last modified: 2026/7/12 14:23:08
+Scene loaded OK
+Root objects: 0
+
+=== Git log for RewardScene ===

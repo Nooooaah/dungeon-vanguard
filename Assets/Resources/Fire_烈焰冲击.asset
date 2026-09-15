@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc9b0cce05c6984184e0d8129caff08, type: 3}
+  m_Name: "Fire_\u70C8\u7130\u51B2\u51FB"
+  m_EditorClassIdentifier: 
+  cardName: "\u70C8\u7130\u51B2\u51FB"
+  element: 1
+  cardType: 0
+  cost: 2
+  damage: 12
+  shield: 0
+  heal: 0
+  draw: 0
+  buffType: 0
+  buffValue: 0
+  buffDuration: 0
+  targetSkipTurn: 0
+  selfDamage: 0
+  dotDamage: 0
+  dotAmount: 0
+  artwork: {fileID: 21300000, guid: ee195784f4a1b134586c509341f3d535, type: 3}
+  description: "\u91CA\u653E\u731B\u70C8\u7684\u70C8\u7130\u51B2\u51FB\u6CE2\uFF0C\u5BF9\u654C\u4EBA\u9020\u6210\u5927\u91CF\u706B\u7130\u4F24\u5BB3\u3002"

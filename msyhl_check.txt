@@ -1,0 +1,10 @@
+msyhl SDF:
+  atlasTexture: msyhl Atlas
+  material: msyhl Atlas Material
+  material.mainTexture: msyhl Atlas
+  m_AtlasTextures size: 1
+    [0] = msyhl Atlas
+  atlasPopulationMode: Dynamic
+  sourceFontFile: msyhl
+  characterTable count: 119
+  fallbacks: 1

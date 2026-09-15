@@ -1,0 +1,7 @@
+Exists: True
+Size: 1161878 bytes
+Texture2D: 18683830 1920x1077
+Sprite: 18683830
+Importer type: Sprite
+Importer shape: Texture2D
+Meta exists: True

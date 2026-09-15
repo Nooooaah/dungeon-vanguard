@@ -1,0 +1,131 @@
+=== LiberationSans SDF ===
+sourceFont: NULL
+sourceFontFileGUID: none
+atlasTextureWidth: 1024x1024
+populationMode: Static
+
+=== msyhl SDF ===
+sourceFont: msyhl
+sourceFontPath: Assets/msyhl.ttc
+populationMode: Dynamic
+atlasWidth: 1024x1024
+
+=== msyhbd SDF ===
+sourceFont: msyhbd
+sourceFontPath: Assets/msyhbd.ttc
+populationMode: Dynamic
+
+=== ChineseSDF ===
+found: False
+
+=== LiberationSans SDF - Fallback ===
+found: False
+
+=== All TTF files ===
+  Assets/msyhbd.ttc
+  Assets/msyhl.ttc
+  Assets/Settings/simhei.ttf
+  Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  Packages/cn.tuanjie.codely.bridge/Editor/Bridge/fonts/FiraMono-Regular.ttf
+  Packages/cn.tuanjie.codely.bridge/Editor/Bridge/fonts/Inter.ttc
+  Packages/cn.tuanjie.codely.bridge/Editor/Bridge/fonts/NotoSans-Regular.ttf
+  Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
+  Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
+  Packages/com.unity.collab-proxy/Editor/Assets/Fonts/Cascadia.ttf
+  Packages/cn.tuanjie.ai.generators/Editor/Fonts/SourceHanSansSC-Medium.otf
+  Packages/cn.tuanjie.ai.generators/Editor/Fonts/SourceHanSansSC-Regular.otf
+
+=== TMP_Text objects in prefabs ===
+  Assets/Prefebs/Cards/CardTemplate.prefab > CostText | font=msyhl SDF
+  Assets/Prefebs/Cards/CardTemplate.prefab > ElementText | font=msyhl SDF
+  Assets/Prefebs/Cards/CardTemplate.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/Cards/CardTemplate.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/Cards/CardTemplate.prefab > AttackText | font=msyhl SDF
+  Assets/Prefebs/Cards/CardTemplate.prefab > HealthText | font=msyhl SDF
+  Assets/Prefebs/Map/FloorLabel.prefab > TitleText | font=NULL
+  Assets/Prefebs/Map/NodeButton.prefab > Text (TMP) | font=NULL
+  Assets/Prefebs/UI/ChoiceButton.prefab > Text (TMP) | font=NULL
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > EnemyName | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > EnemyHPText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > EnemyIntent | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > HPLable | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > HPText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > EnergyLabel | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > EnergyText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > ShieldText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > DeckCount | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > DiscardCount | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_BattleUI.prefab > TurnText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > Title | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > Subtitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_ElementSelection.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > Title | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > Subtitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > FloorText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > KillsText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > GoldText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_GameOver.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Title | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Subtitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MainMenu.prefab > Version | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > FloorTitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > SubTitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LegendTitle | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_0 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_1 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_2 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_3 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_4 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > LText_5 | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_MapUI.prefab > Label | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > Title | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > GoldText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > CostText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > HintText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > CostText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > HintText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > NameText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > CostText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > DescText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > HintText | font=msyhl SDF
+  Assets/Prefebs/UI/Panel_RewardPopup.prefab > Label | font=msyhl SDF
+  Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab > TextMeshPro Text | font=LiberationSans SDF
+  Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab > TextMeshPro - Prefab 1 | font=LiberationSans SDF
+  Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab > TextMeshPro - Prefab 2 | font=LiberationSans SDF

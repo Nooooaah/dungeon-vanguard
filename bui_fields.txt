@@ -1,0 +1,16 @@
+enemyData (EnemyData): NULL
+enemyArea (Transform): EnemyArea (UnityEngine.RectTransform)
+playerHPBar (HPBarUI): PlayerHPBar (HPBarUI)
+enemyHPBar (HPBarUI): EnemyHPBar (HPBarUI)
+enemyPortrait (Image): NULL
+enemyNameText (TMP_Text): EnemyName (TMPro.TextMeshProUGUI)
+enemyIntentText (TMP_Text): EnemyIntentText (TMPro.TextMeshProUGUI)
+handArea (Transform): HandArea (UnityEngine.RectTransform)
+endTurnButton (Button): EndTurnBtn (UnityEngine.UI.Button)
+turnText (TMP_Text): TurnText (TMPro.TextMeshProUGUI)
+flashOverlay (Image): FlashOverlay (UnityEngine.UI.Image)
+particleLayer (RectTransform): ParticleLayer (UnityEngine.RectTransform)
+comboTextLayer (RectTransform): ComboTextLayer (UnityEngine.RectTransform)
+damageTextLayer (RectTransform): DamageTextLayer (UnityEngine.RectTransform)
+deckCountText (TMP_Text): DeckCount (TMPro.TextMeshProUGUI)
+discardCountText (TMP_Text): DiscardCount (TMPro.TextMeshProUGUI)

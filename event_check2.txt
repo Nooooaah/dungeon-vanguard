@@ -1,0 +1,19 @@
+eventPopup type: EventPopupUI
+eventPopup GameObject: EventPopup
+eventPopup activeSelf: False
+Is EventPopupUI: True
+
+Fields:
+  titleText (TMP_Text): TitleText (TMPro.TextMeshProUGUI)
+  descriptionText (TMP_Text): DescriptionText (TMPro.TextMeshProUGUI)
+  choicesContainer (Transform): ChoicesContainer (UnityEngine.RectTransform)
+  choiceButtonPrefab (GameObject): ChoiceButton (UnityEngine.GameObject)
+
+Children:
+  [0] Card active=True
+
+Components:
+  RectTransform
+  CanvasRenderer
+  Image
+  EventPopupUI

@@ -1,0 +1,5 @@
+Active scene: BattleScene
+
+Fixed 0 TMP_Text objects in scene.
+
+Done.

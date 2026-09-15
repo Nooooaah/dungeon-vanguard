@@ -1,0 +1,16 @@
+GameOverUI instances: 1
+
+  GameObject: Panel_GameOver active=True
+  titleText: NULL
+  subtitleText: NULL
+  restartButton: NULL
+  mainMenuButton: NULL
+
+All TMP in scene:
+  Label parent=MainMenuBtn text='返回主菜单' font=msyhl SDF
+  Label parent=RestartBtn text='重新开始' font=msyhl SDF
+  GoldText parent=Stats text='获得金币: 150' font=msyhl SDF
+  KillsText parent=Stats text='击败敌人: 12' font=msyhl SDF
+  FloorText parent=Stats text='到达层数: 5' font=msyhl SDF
+  Subtitle parent=Panel_GameOver text='恭喜征服所有挑战!' font=msyhl SDF
+  Title parent=Panel_GameOver text='胜  利' font=msyhl SDF

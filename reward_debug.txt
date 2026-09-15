@@ -1,0 +1,12 @@
+GameManager.Instance: False
+
+RewardPopupUI: True
+  activeSelf: True
+  skipButton: True
+  _rewardProcessed: False
+  OnCardSelected listeners: 1
+
+RewardSceneInit: True
+
+GetMapSceneName(0) = 'MapScene_0'
+SCENE_REWARD = 'RewardScene'

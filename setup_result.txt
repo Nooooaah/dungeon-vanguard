@@ -1,0 +1,17 @@
+BattleSceneSetup on: Canvas
+Player prefabs: fire=True water=True wind=True
+Enemy: prefab=True data=花火
+Enemy: prefab=True data=龙卷
+Enemy: prefab=True data=盈盈
+Enemy: prefab=True data=太虚骨龙
+Enemy: prefab=True data=炎之贤者
+playerCharacterPanel: True
+enemyAreaPanel: True
+Script containers created
+playerNameText: True
+enemyNameText: True
+enemyIntentText: True
+enemyHPBar: True
+battleUI: True
+
+Scene saved!

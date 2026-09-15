@@ -1,0 +1,14 @@
+Card active: True
+Card Image: True color=RGBA(0.150, 0.150, 0.200, 0.950)
+Card RT: size=(600.00, 500.00) pos=(0.00, 0.00)
+
+EventPopup RT: size=(0.00, 0.00) pos=(0.00, 0.00)
+EventPopup Image: True color=RGBA(0.000, 0.000, 0.000, 0.700)
+
+titleText color: RGBA(1.000, 1.000, 1.000, 1.000)
+titleText fontSize: 32
+titleText RT: size=(100.00, 100.00) pos=(0.00, 0.00)
+descText color: RGBA(0.850, 0.850, 0.850, 1.000)
+descText RT: size=(100.00, 100.00) pos=(0.00, 0.00)
+
+Canvas renderMode: ScreenSpaceOverlay

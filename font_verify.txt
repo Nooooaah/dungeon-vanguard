@@ -1,0 +1,31 @@
+=== LiberationSans SDF ===
+sourceFont: LiberationSans
+populationMode: Dynamic
+fallbacks: 1
+  -> SimHei SDF (source=simhei, dynamic=Dynamic)
+
+=== msyhl SDF ===
+sourceFont: msyhl
+populationMode: Dynamic
+fallbacks: 1
+  -> SimHei SDF
+
+=== msyhbd SDF ===
+sourceFont: msyhbd
+populationMode: Dynamic
+fallbacks: 1
+  -> SimHei SDF
+
+=== SimHei SDF ===
+sourceFont: simhei
+populationMode: Dynamic
+atlas: 1024x1024
+
+=== Prefab font check ===
+  Assets/Prefebs/Map/FloorLabel.prefab > TitleText | font=msyhl SDF
+  Assets/Prefebs/Map/NodeButton.prefab > Text (TMP) | font=msyhl SDF
+  Assets/Prefebs/UI/ChoiceButton.prefab > Text (TMP) | font=msyhl SDF
+
+=== Corrupted assets check ===
+ChineseSDF exists: False
+LibFallback exists: False

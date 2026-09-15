@@ -1,0 +1,15 @@
+Event: 神秘药水
+Desc: 路边石台上放着一瓶散发微光的药水，瓶身上刻着古老的符文。
+Choices: 3
+  - 喝下去（回复15HP）
+  - 放下来，继续探索
+  - 一搏！（50%：+30HP / 50%：-10HP）
+
+After Show():
+  activeSelf: True
+  titleText: '神秘药水'
+  descriptionText: '路边石台上放着一瓶散发微光的药水，瓶身上刻着古老的符文。'
+  choicesContainer childCount: 3
+    [0] ChoiceButton(Clone) text='喝下去（回复15HP）'
+    [1] ChoiceButton(Clone) text='放下来，继续探索'
+    [2] ChoiceButton(Clone) text='一搏！（50%：+30HP / 50%：-10HP）'

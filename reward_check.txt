@@ -1,0 +1,24 @@
+RewardPopupUI found on: Panel_RewardPopup
+titleText (TMP_Text): NULL
+cardContainer (Transform): null
+cardRewardPrefab (GameObject): null
+skipButton (Button): NULL
+eventPanel (GameObject): null
+eventDescriptionText (TMP_Text): NULL
+eventChoiceContainer (Transform): null
+eventChoiceButtonPrefab (GameObject): null
+goldText (TMP_Text): NULL
+
+CardContainer children:
+  [0] RewardCard_0 Button=True CardDisplay=False
+    text='火球术'
+  [1] RewardCard_1 Button=True CardDisplay=False
+    text='水箭'
+  [2] RewardCard_2 Button=True CardDisplay=False
+    text='风刃'
+
+SkipBtn: Button=True onClick listeners=0
+
+GameManager.Instance: False
+
+Searching for who calls ShowCardReward...

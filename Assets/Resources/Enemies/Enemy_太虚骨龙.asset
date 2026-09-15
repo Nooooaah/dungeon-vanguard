@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913bf6b96fc60e34d9c49892453d191b, type: 3}
+  m_Name: "Enemy_\u592A\u865A\u9AA8\u9F99"
+  m_EditorClassIdentifier: 
+  enemyName: "\u592A\u865A\u9AA8\u9F99"
+  element: 1
+  type: 2
+  maxHp: 90
+  actions:
+  - intentText: "\u653B\u51FB20"
+    actionType: 0
+    damage: 20
+    shield: 0
+    heal: 0
+    weight: 15
+  - intentText: "\u653B\u51FB15 \u62A4\u76FE15"
+    actionType: 3
+    damage: 15
+    shield: 15
+    heal: 0
+    weight: 30
+  - intentText: "\u653B\u51FB8"
+    actionType: 0
+    damage: 8
+    shield: 0
+    heal: 0
+    weight: 35
+  - intentText: "\u62A4\u76FE24"
+    actionType: 1
+    damage: 0
+    shield: 24
+    heal: 0
+    weight: 20
+  - intentText: 
+    actionType: 0
+    damage: 0
+    shield: 0
+    heal: 0
+    weight: 0
+  rageThreshold: 50
+  rageActions:
+  - intentText: "\u653B\u51FB25"
+    actionType: 0
+    damage: 25
+    shield: 0
+    heal: 0
+    weight: 20
+  - intentText: "\u653B\u51FB5"
+    actionType: 0
+    damage: 5
+    shield: 0
+    heal: 0
+    weight: 20
+  - intentText: "\u653B\u51FB18"
+    actionType: 0
+    damage: 18
+    shield: 0
+    heal: 0
+    weight: 60

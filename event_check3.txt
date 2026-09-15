@@ -1,0 +1,37 @@
+EventPopup GO: EventPopup active=False
+Parent: Canvas
+Scene path: Assets/Scenes/MapScene_1.scene
+
+titleText GO: TitleText
+  parent: Card
+  active: True
+  font: msyhl SDF
+
+descriptionText GO: DescriptionText
+  parent: Card
+  active: True
+  font: msyhl SDF
+
+choicesContainer: ChoicesContainer
+  childCount: 0
+
+choiceButtonPrefab: ChoiceButton
+  has TMP: True font=msyhl SDF
+
+Root hierarchy (Canvas):
+- Canvas
+  - Panel
+    - Scroll View
+      - Viewport
+        - Content
+      - Scrollbar Horizontal
+        - Sliding Area
+          - Handle
+      - Scrollbar Vertical
+        - Sliding Area
+          - Handle
+  - EventPopup [INACTIVE]
+    - Card
+      - TitleText text='事件标题' font=msyhl SDF
+      - DescriptionText text='事件描述文本' font=msyhl SDF
+      - ChoicesContainer

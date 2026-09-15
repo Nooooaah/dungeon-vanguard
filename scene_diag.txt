@@ -1,0 +1,43 @@
+BattleManager found: True
+BattleUI found: True
+  handArea: HandArea
+  enemyArea: EnemyArea
+
+CardManager found: False
+HandController found: False
+
+EnemyArea tag: 'Untagged'
+EnemyArea has Image: True
+
+Canvas renderMode: ScreenSpaceOverlay
+Canvas GO components:
+  RectTransform
+  Canvas
+  CanvasScaler
+  GraphicRaycaster
+  BattleUI
+
+HandArea components:
+  RectTransform
+
+HandArea children count: 4
+  child[0]: HandBG active=True
+  child[1]: HandLabel active=True
+  child[2]: Card_疾风步 active=True
+  child[3]: Card_火球术 active=True
+
+EventSystem found: True
+Enemy tag: 'Untagged'
+Enemy components:
+  Transform
+  EnemyBase
+  EnemyAI
+
+=== All tags ===
+  Untagged
+  Respawn
+  Finish
+  EditorOnly
+  MainCamera
+  Player
+  GameController
