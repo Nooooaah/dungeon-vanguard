@@ -4,7 +4,40 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IntroVideo.scene
+    guid: C3kf4Hn5VHk0h4xh1FkxqgEjCeenN/h29DyYpIFvKHZm1tr1Od4hyYQ=
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.scene
+    guid: CH0ft3irAHPO7H6w4AiSOiDpEzwmuPqKCS13bUCuY0g9NDyVKCBcO18=
+  - enabled: 1
+    path: Assets/Scenes/ElementSelection.scene
+    guid: CiwYvSr/Bi6kdqqO91NqfASlx+lGR06++gQwOl3XT7/Seql5h6xRkPM=
+  - enabled: 1
+    path: Assets/Scenes/MapScene_1.scene
+    guid: C3od5iipAn69vIJVYCm3hJ8ZZpUD7PKhlbuVJJywqAmcMRzroNFgrbc=
+  - enabled: 1
+    path: Assets/Scenes/MapScene_2.scene
+    guid: Xi4avCioU3k17VgiAritsYA97XXkYACDULtUEudDEv7cuqFPYrq6oDg=
+  - enabled: 1
+    path: Assets/Scenes/MapScene_3.scene
+    guid: Bn9O5yL/Wnp4DAYI9qDerz9LBH8Z201T8f6bpkqIfcMtQqQFwp8/kts=
+  - enabled: 1
+    path: Assets/Scenes/MapScene_4.scene
+    guid: CnxKtiz5AijZU19+E7TePnrtDmz/1spkgJYV3jbHg31xRxwo01A0aLU=
+  - enabled: 1
+    path: Assets/Scenes/MapScene_5.scene
+    guid: WXtN4CqpWniiCYxQXAKegtuumClxSax+7SvbbxZ29zrEkJWv5a8qydM=
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.scene
+    guid: CigZti6uUHrqGIBbuoXNMRJZQUMQswvD13pSvCOex5cmU2Yaf0LlmwU=
+  - enabled: 1
+    path: Assets/Scenes/RewardScene.scene
+    guid: 1b704376f70af864eb0f73a2e2becb34
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.scene
+    guid: f4e191db3bcacb1439c8e34d084a9883
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:
